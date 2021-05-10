@@ -1,5 +1,4 @@
 import AppContainer from "./AppContainer";
-import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import { device } from "../ThemeConfig";
@@ -56,7 +55,7 @@ const NavLink = styled(KNavbarText)`
 export default function Navbar() {
   return (
     <NavbarContainer>
-      <Image src="/Logo.png" width={166} height={83} />
+      <img src={require("../public/Logo.png")} width={166} height={83} />
       <div className="navbar-links">
         {navLinks.map((item, index) => (
           <Link href={item.to} key={index}>

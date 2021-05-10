@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled from "styled-components";
 import { device, lightTheme } from "../../ThemeConfig";
 import AppContainer from "../AppContainer";
@@ -61,7 +60,12 @@ function Hero() {
             Join Us
           </Button>
         </div>
-        <Image className="heroImage" src="/Hero.png" height={391} width={484} />
+        <img
+          className="heroImage"
+          src={require("../../public/Hero.png")}
+          height={391}
+          width={484}
+        />
       </HeroContainerTwo>
     </HeroContainer>
   );
