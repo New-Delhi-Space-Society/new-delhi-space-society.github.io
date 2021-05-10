@@ -6,7 +6,7 @@ import Button, { ButtonType, ButtonVariant } from "./Button";
 import { KNavbarText } from "./Typography";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface NavbarLink {
   to: string;
@@ -81,7 +81,10 @@ export default function Navbar() {
     <nav>
       <NavbarContainer>
         <img src={require("../public/Logo.png")} width={166} height={83} />
-        <div className="navbar-links">
+        <div
+          className="navbar-links"
+          style={{ display: "flex", alignItems: "center" }}
+        >
           {navLinks.map((item, index) => (
             <Link href={item.to} key={index}>
               <NavLink>{item.text}</NavLink>
@@ -116,6 +119,14 @@ export default function Navbar() {
               </Link>
             </MobileNavbarLinkDiv>
           ))}
+          <MobileNavbarLinkDiv>
+            <Button
+              buttonVariant={ButtonVariant.Secondary}
+              buttonType={ButtonType.Normal}
+            >
+              Join Us
+            </Button>
+          </MobileNavbarLinkDiv>
         </div>
       )}
     </nav>
