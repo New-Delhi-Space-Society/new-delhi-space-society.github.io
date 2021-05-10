@@ -6,6 +6,7 @@ import Button, { ButtonType, ButtonVariant } from "./Button";
 import { KNavbarText } from "./Typography";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 
 interface NavbarLink {
   to: string;
@@ -36,6 +37,18 @@ const NavbarContainer = styled(AppContainer)`
   justify-content: space-between;
   align-items: center;
   padding: 8px;
+
+  .hamburger {
+    display: block;
+    width: 14px;
+    cursor: pointer;
+  }
+
+  @media ${device.md} {
+    .hamburger {
+      display: none;
+    }
+  }
 `;
 
 const NavLink = styled(KNavbarText)`
@@ -48,30 +61,63 @@ const NavLink = styled(KNavbarText)`
   }
 
   @media ${device.md} {
-    display: inline-block;
+    display: block;
+  }
+`;
+
+const MobileNavbarLinkDiv = styled.div`
+  border-top: 1px solid #eee;
+  padding: 8px;
+
+  :hover {
+    background-color: #eee;
   }
 `;
 
 export default function Navbar() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
   return (
-    <NavbarContainer>
-      <img src={require("../public/Logo.png")} width={166} height={83} />
-      <div className="navbar-links">
-        {navLinks.map((item, index) => (
-          <Link href={item.to} key={index}>
-            <NavLink>{item.text}</NavLink>
-          </Link>
-        ))}
-        <NavLink>
-          <Button
-            buttonVariant={ButtonVariant.Secondary}
-            buttonType={ButtonType.Normal}
-          >
-            Join Us
-          </Button>
-        </NavLink>
-        <FontAwesomeIcon icon={faBars} />
-      </div>
-    </NavbarContainer>
+    <nav>
+      <NavbarContainer>
+        <img src={require("../public/Logo.png")} width={166} height={83} />
+        <div className="navbar-links">
+          {navLinks.map((item, index) => (
+            <Link href={item.to} key={index}>
+              <NavLink>{item.text}</NavLink>
+            </Link>
+          ))}
+          <NavLink>
+            <Button
+              buttonVariant={ButtonVariant.Secondary}
+              buttonType={ButtonType.Normal}
+            >
+              Join Us
+            </Button>
+          </NavLink>
+          <div onClick={() => setMenuOpen(!isMenuOpen)} className="hamburger">
+            <FontAwesomeIcon icon={faBars} size="xs" />
+          </div>
+        </div>
+      </NavbarContainer>
+      {isMenuOpen && (
+        <div
+          style={{
+            position: "absolute",
+            top: 99,
+            backgroundColor: "#fff",
+            width: "100%",
+          }}
+        >
+          {navLinks.map((item, index) => (
+            <MobileNavbarLinkDiv>
+              <Link href={item.to} key={index}>
+                <KNavbarText>{item.text}</KNavbarText>
+              </Link>
+            </MobileNavbarLinkDiv>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 }
