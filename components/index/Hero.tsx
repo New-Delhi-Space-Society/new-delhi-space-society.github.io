@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device, lightTheme } from "../../ThemeConfig";
 import AppContainer from "../AppContainer";
-import Button, { ButtonVariant, ButtonType } from "../Button";
+import Button from "../Button";
 import { KH1, KSubtitle } from "../Typography";
 
 const HeroContainer = styled.div`
@@ -53,10 +53,7 @@ function Hero() {
               National Space Society
             </a>
           </KSubtitle>
-          <Button
-            buttonVariant={ButtonVariant.Primary}
-            buttonType={ButtonType.OutlinedBG}
-          >
+          <Button buttonVariant="primary" buttonType="outlinedBG">
             Join Us
           </Button>
         </div>

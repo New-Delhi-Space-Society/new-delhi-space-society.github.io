@@ -25,7 +25,7 @@ export const KSubtitle = styled.p`
 `;
 
 export const KBody = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
 `;
 

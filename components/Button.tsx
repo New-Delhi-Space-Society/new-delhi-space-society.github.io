@@ -3,17 +3,9 @@ import styled from "styled-components";
 import { lightTheme } from "../ThemeConfig";
 import { KButtonText } from "./Typography";
 
-export enum ButtonType {
-  Normal = "normal",
-  Outlined = "outlined",
-  Text = "text",
-  OutlinedBG = "outlinedBG",
-}
+export type ButtonType = "normal" | "outlined" | "text" | "outlinedBG";
 
-export enum ButtonVariant {
-  Primary = "primary",
-  Secondary = "secondary",
-}
+export type ButtonVariant = "primary" | "secondary";
 
 interface iButtonProps {
   buttonType: ButtonType;
@@ -22,21 +14,21 @@ interface iButtonProps {
 
 const StyledButton = styled.button<iButtonProps>`
   background-color: ${(props) =>
-    props.buttonType === ButtonType.Normal
-      ? props.buttonVariant === ButtonVariant.Primary
+    props.buttonType === "normal"
+      ? props.buttonVariant === "primary"
         ? lightTheme.colors.primaryMain
         : lightTheme.colors.secondaryMain
-      : props.buttonType == ButtonType.OutlinedBG && "#ffffff"};
+      : props.buttonType == "outlinedBG" && "#ffffff"};
   border: ${(props) =>
-    props.buttonType != ButtonType.Normal
+    props.buttonType != "normal"
       ? "1px solid" +
-        (props.buttonVariant === ButtonVariant.Primary
+        (props.buttonVariant === "primary"
           ? lightTheme.colors.primaryMain
           : lightTheme.colors.secondaryMain)
       : 0};
   color: ${(props) =>
-    props.buttonType === ButtonType.OutlinedBG
-      ? props.buttonVariant === ButtonVariant.Primary
+    props.buttonType === "outlinedBG"
+      ? props.buttonVariant === "primary"
         ? lightTheme.colors.primaryMain
         : lightTheme.colors.secondaryMain
       : lightTheme.colors.body};

@@ -2,7 +2,7 @@ import AppContainer from "./AppContainer";
 import Link from "next/link";
 import styled from "styled-components";
 import { device } from "../ThemeConfig";
-import Button, { ButtonType, ButtonVariant } from "./Button";
+import Button from "./Button";
 import { KNavbarText } from "./Typography";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,7 +56,7 @@ const NavLink = styled(KNavbarText)`
   cursor: pointer;
   display: none;
 
-  :hover {
+  &:hover {
     color: #333;
   }
 
@@ -91,10 +91,7 @@ export default function Navbar() {
             </Link>
           ))}
           <NavLink>
-            <Button
-              buttonVariant={ButtonVariant.Secondary}
-              buttonType={ButtonType.Normal}
-            >
+            <Button buttonVariant="secondary" buttonType="normal">
               Join Us
             </Button>
           </NavLink>
@@ -120,10 +117,7 @@ export default function Navbar() {
             </MobileNavbarLinkDiv>
           ))}
           <MobileNavbarLinkDiv>
-            <Button
-              buttonVariant={ButtonVariant.Secondary}
-              buttonType={ButtonType.Normal}
-            >
+            <Button buttonVariant="secondary" buttonType="normal">
               Join Us
             </Button>
           </MobileNavbarLinkDiv>

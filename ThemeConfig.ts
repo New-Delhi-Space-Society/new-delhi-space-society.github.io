@@ -24,6 +24,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.font};
     font-size: 16px;
+    min-height: 100vh;
+    position: relative;
   }
 `;
 
