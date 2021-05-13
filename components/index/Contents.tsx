@@ -17,6 +17,7 @@ export default function Contents() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultricies
         purus ullamcorper amet habitant et mauris facilisi.
         <img
+          style={{ maxWidth: "100%", height: "auto" }}
           src="https://via.placeholder.com/940x500"
           alt="Placeholder Slideshow"
         />
