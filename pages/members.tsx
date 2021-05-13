@@ -21,6 +21,13 @@ export const getStaticProps: GetStaticProps<iProps> = async () => {
   console.log("RUNNING");
   console.log(server);
   const res = await fetch(`${server}/api/members`);
+  if (!res.ok) {
+    return {
+      props: {
+        members: [],
+      },
+    };
+  }
   const members: MembersData = await res.json();
 
   return {
