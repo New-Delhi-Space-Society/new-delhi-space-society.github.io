@@ -15,7 +15,7 @@ export const KH2 = styled.h2`
 `;
 
 export const KH3 = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: -2%;
 `;
