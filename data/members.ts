@@ -3,57 +3,67 @@ export const members = [
     type: "Board of Directors",
     members: [
       {
-        name: "John Doe",
+        name: "Shiv Sethi",
         role: "President",
         image: "dummy.png",
       },
       {
-        name: "Jane Doe",
-        role: "President",
+        name: "Ashvin Verma",
+        role: "Vice-President",
+        image: "ashvin.jpg",
+      },
+      {
+        name: "Rudraneel Sinha",
+        role: "Treasurer",
         image: "dummy.png",
       },
       {
-        name: "Jane Doe",
-        role: "President",
+        name: "Priyanshi Ahuja",
+        role: "Member",
         image: "dummy.png",
       },
       {
-        name: "Jane Doe",
-        role: "President",
+        name: "Shashwat Goel",
+        role: "Member",
         image: "dummy.png",
       },
       {
-        name: "Jane Doe",
-        role: "President",
+        name: "Hersh Singh",
+        role: "Member",
         image: "dummy.png",
       },
       {
-        name: "Jane Doe",
-        role: "President",
-        image: "dummy.png",
-      },
-      {
-        name: "Jane Doe",
-        role: "President",
+        name: "Saksham Arora",
+        role: "Member",
         image: "dummy.png",
       },
     ],
   },
   {
-    type: "Current Members",
+    type: "Volunteers",
     members: [
       {
-        name: "John Doe",
+        name: "Shireen Rajora",
+        role: "Member",
+        image: "shireen.png",
+      },
+      {
+        name: "Kavin Valli",
+        role: "Member",
+        image: "kavin.jpeg",
+      },
+      {
+        name: "Aadhya Dhar",
         role: "Member",
         image: "dummy.png",
       },
       {
-        name: "Jane Doe",
+        name: "Amartya Bagchi",
         role: "Member",
-        image: "dummy.png",
+        image: "amartya.jpg",
       },
       {
-        name: "John Roe",
+        name: "Ashay Srivastava",
         role: "Member",
         image: "dummy.png",
       },
