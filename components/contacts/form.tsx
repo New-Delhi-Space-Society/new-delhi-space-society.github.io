@@ -110,7 +110,7 @@ export default function ContactForm() {
         <input
           type="text"
           name="comment"
-          placeholder="Comment"
+          placeholder="Comment / Query"
           onChange={(e) => setComment(e.target.value)}
           value={comment}
           disabled={isLoading}
@@ -124,6 +124,13 @@ export default function ContactForm() {
       >
         {!isLoading ? "Submit" : "Loading..."}
       </Button>
+      <a
+        href="https://space.nss.org/new-delhi-space-society/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Contact Info
+      </a>
     </ContactFormStyle>
   );
 }
