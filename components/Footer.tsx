@@ -19,7 +19,7 @@ export default function Footer() {
       style={{
         borderTop: "1px solid #eee",
         padding: "8px 0",
-        marginTop: "8px";
+        marginTop: "8px",
       }}
     >
       <FooterContainer>
