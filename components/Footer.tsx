@@ -5,6 +5,7 @@ import { lightTheme } from "../ThemeConfig";
 
 const FooterContainer = styled(AppContainer)`
   display: flex;
+  margin-top: 8px;
 `;
 
 const FooterItem = styled.a`
