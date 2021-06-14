@@ -35,7 +35,7 @@ export const members = [
       {
         name: "Saksham Arora",
         role: "Member",
-        image: "dummy.png",
+        image: "saksham.jpeg",
       },
     ],
   },
