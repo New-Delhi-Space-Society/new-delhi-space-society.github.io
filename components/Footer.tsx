@@ -2,6 +2,7 @@ import AppContainer from "./AppContainer";
 import { KBody } from "./Typography";
 import styled from "styled-components";
 import { lightTheme } from "../ThemeConfig";
+import { nssUrl } from "../config";
 
 const FooterContainer = styled(AppContainer)`
   display: flex;
@@ -42,7 +43,7 @@ export default function Footer() {
         </KBody>
         ·
         <KBody>
-          <FooterItem href="https://space.nss.org" target="_blank">
+          <FooterItem href={nssUrl} target="_blank">
             National Space Society
           </FooterItem>
         </KBody>

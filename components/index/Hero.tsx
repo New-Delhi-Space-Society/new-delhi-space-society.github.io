@@ -3,6 +3,7 @@ import { device, lightTheme } from "../../ThemeConfig";
 import AppContainer from "../AppContainer";
 import Button from "../Button";
 import { KH1, KSubtitle } from "../Typography";
+import { nssUrl } from "../../config";
 
 const HeroContainer = styled.div`
   background: linear-gradient(
@@ -46,7 +47,7 @@ function Hero() {
           <KSubtitle>
             A Chapter of the{" "}
             <a
-              href="https://space.nss.org"
+              href={nssUrl}
               target="_blank"
               style={{ fontWeight: "bold", color: "#ffffff" }}
             >

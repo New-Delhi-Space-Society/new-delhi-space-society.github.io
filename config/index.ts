@@ -6,3 +6,5 @@ export const server = dev
 
 export const formUrl =
   "https://script.google.com/macros/s/AKfycbzK-CLh7dx2ufQcbgwVCq4yph8NQgp4hUfzsXPPcxcWrRbLCaw6guTkNouhD9gnFrM4Yw/exec?";
+
+export const nssUrl = "https://space.nss.org";

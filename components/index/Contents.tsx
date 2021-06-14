@@ -1,5 +1,6 @@
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
+import { nssUrl } from "../../config";
 
 export default function Contents() {
   return (
@@ -8,7 +9,7 @@ export default function Contents() {
         With a goal of making advancement in space science and aerospace
         engineering, we are a group of space enthusiasts who formed the New
         Delhi Space Society, a chapter of{" "}
-        <a href="http://space.nss.org" target="_blank">
+        <a href={nssUrl} target="_blank">
           National Space Society
         </a>
         . We conduct research and explore the nuances in space, but we are not
