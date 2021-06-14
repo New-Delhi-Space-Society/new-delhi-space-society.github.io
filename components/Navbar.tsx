@@ -80,7 +80,14 @@ export default function Navbar() {
   return (
     <nav>
       <NavbarContainer>
-        <img src={require("../public/Logo.png")} width={166} height={83} />
+        <Link href="/">
+          <img
+            style={{ cursor: "pointer" }}
+            src={require("../public/Logo.png")}
+            width={166}
+            height={83}
+          />
+        </Link>
         <div
           className="navbar-links"
           style={{ display: "flex", alignItems: "center" }}
