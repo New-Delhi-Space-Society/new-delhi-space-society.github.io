@@ -37,5 +37,5 @@ Figma: https://www.figma.com/file/sUhBLGwVk0tTFjMNNXYLLU/New-Delhi-Space-Society
 
 1. Fork repository
 2. Create a new branch with following naming convention - https://deepsource.io/blog/git-branch-naming-conventions/
-3. Commit code at regular interval with proper description
+3. Commit code at regular interval with proper description - https://www.conventionalcommits.org/en/v1.0.0
 4. Create a Pull Request to `new-delhi-space-society/main`
