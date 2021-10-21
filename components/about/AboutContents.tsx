@@ -29,12 +29,23 @@ const PrincipalsContainer = styled.div`
   }
 `;
 
+const LogoImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  margin-left: 0px;
+
+  @media ${device.lg} {
+    max-width: 40%;
+    margin-left: 10px;
+  }
+`;
+
 export default function AboutContents() {
   return (
     <AppContainer>
       <SubHeadingContents title="History">
         <HistoryContainer>
-          <div className="content">
+          <div className="content" style={{ marginRight: "4px" }}>
             The New Delhi Space Society is a non-profit organization and
             functions as a chapter of the National Space Society. It was founded
             in 2018, seeing the level of enthusiasm in New Delhi students about
@@ -51,9 +62,8 @@ export default function AboutContents() {
             civilization beyond Earth, to settle space and to use the resulting
             resources to build a hopeful and prosperous future for humanity.”
           </div>
-          <img
-            style={{ maxWidth: "100%", height: "auto" }}
-            src={require("../../public/vector-graphic-history.png")}
+          <LogoImage
+            src={require("../../public/logo-1.png")}
             alt="Vector Graphic"
           />
         </HistoryContainer>

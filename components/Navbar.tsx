@@ -83,8 +83,8 @@ export default function Navbar() {
         <Link href="/">
           <img
             style={{ cursor: "pointer" }}
-            src={require("../public/Logo.png")}
-            width={166}
+            src={require("../public/badge.png")}
+            width={117}
             height={83}
           />
         </Link>
