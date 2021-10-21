@@ -3,39 +3,39 @@ export const members = [
     type: "Board of Directors",
     members: [
       {
-        name: "Ashvin Verma",
+        name: "Shiv Sethi",
         role: "President",
+        image: "shiv.jpeg",
+      },
+      {
+        name: "Ashvin Verma",
+        role: "Vice-President",
         image: "ashvin.jpg",
       },
       {
         name: "Rudraneel Sinha",
-        role: "Vice-President",
+        role: "Treasurer",
         image: "rudes.png",
       },
       {
         name: "Priyanshi Ahuja",
-        role: "Treasurer",
+        role: "Member",
         image: "priyanshi.jpeg",
       },
       {
-        name: "Shiv Sethi",
-        role: "Board Member",
-        image: "shiv.jpeg",
+        name: "Shashwat Goel",
+        role: "Member",
+        image: "shashwat.jpeg",
       },
       {
         name: "Hersh Singh",
-        role: "Board Member",
+        role: "Member",
         image: "hersh.jpeg",
       },
       {
         name: "Saksham Arora",
-        role: "Board Member",
+        role: "Member",
         image: "saksham.jpeg",
-      },
-      {
-        name: "Kavin Valli",
-        role: "Chapter Officer",
-        image: "kavin.jpeg",
       },
     ],
   },
@@ -46,6 +46,11 @@ export const members = [
         name: "Shireen Rajora",
         role: "Member",
         image: "shireen.png",
+      },
+      {
+        name: "Kavin Valli",
+        role: "Member",
+        image: "kavin.jpeg",
       },
       {
         name: "Aadhya Dhar",
