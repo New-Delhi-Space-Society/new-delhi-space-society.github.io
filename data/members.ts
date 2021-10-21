@@ -63,11 +63,6 @@ export const members = [
         image: "amartya.jpg",
       },
       {
-        name: "Ashay Srivastava",
-        role: "Member",
-        image: "dummy.png",
-      },
-      {
         name: "Shrey Madaan",
         role: "Member",
         image: "dummy.png",
