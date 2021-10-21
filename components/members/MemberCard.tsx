@@ -15,7 +15,7 @@ const MemberCardContainer = styled.div`
   position: relative;
   height: 200px;
   padding: 95px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   margin-top: 100px;
 
   &:last-child {

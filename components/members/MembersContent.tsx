@@ -26,7 +26,7 @@ const MembersDiv = styled.div`
 
 const MembersContent: React.FunctionComponent<iProps> = ({ members }) => {
   return (
-    <AppContainer>
+    <AppContainer style={{ marginBottom: "30px" }}>
       {members &&
         members.map((type, index) => (
           <SubHeadingContents title={type.type} key={index}>
