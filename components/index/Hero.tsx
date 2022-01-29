@@ -54,9 +54,11 @@ function Hero() {
               National Space Society
             </a>
           </KSubtitle>
-          <Button buttonVariant="primary" buttonType="outlinedBG">
-            Join Us
-          </Button>
+          <a href="https://forms.gle/xwbRGFx9fGyASD5B9" target="_blank" rel="noreferrer">
+            <Button buttonVariant="primary" buttonType="outlinedBG">
+              Join Us
+            </Button>
+          </a>
         </div>
         <img
           className="heroImage"
