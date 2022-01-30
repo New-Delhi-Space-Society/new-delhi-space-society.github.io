@@ -98,9 +98,11 @@ export default function Navbar() {
             </Link>
           ))}
           <NavLink>
-            <Button buttonVariant="secondary" buttonType="normal">
-              Join Us
-            </Button>
+            <a href="https://forms.gle/xwbRGFx9fGyASD5B9" target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>
+              <Button buttonVariant="secondary" buttonType="normal">
+                Join Us
+              </Button>
+            </a>
           </NavLink>
           <div onClick={() => setMenuOpen(!isMenuOpen)} className="hamburger">
             <FontAwesomeIcon icon={faBars} size="xs" />
