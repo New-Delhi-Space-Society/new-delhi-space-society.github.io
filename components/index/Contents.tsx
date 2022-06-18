@@ -19,6 +19,13 @@ export default function Contents() {
         and are actively looking for your support! Learn more in the ‘About Us’
         section and volunteer your efforts!
       </SubHeadingContents>
+      <SubHeadingContents title="Awards">
+        The New Delhi Space Society has been awarded with the following:
+        <ul>
+          <li>Best New Chapter Award (2019)</li>
+          <li>Honourable Mention Award (2022)</li>
+        </ul>
+      </SubHeadingContents>
       <SubHeadingContents title="SpaceTech">
         Progress in technology means pushing the boundaries of what is possible,
         not only on earth, but also the final frontier — space. Just as
@@ -32,11 +39,11 @@ export default function Contents() {
         realms of space and its concurrence with technology. The event typically
         has multiple challenging rounds, building up to a final presentation
         round — with a twist!
-        <img
-          style={{ maxWidth: "100%", height: "auto" }}
-          src="https://via.placeholder.com/940x500"
-          alt="Placeholder Slideshow"
-        />
+        {/* <img */}
+        {/*   style={{ maxWidth: "100%", height: "auto" }} */}
+        {/*   src="https://via.placeholder.com/940x500" */}
+        {/*   alt="Placeholder Slideshow" */}
+        {/* /> */}
       </SubHeadingContents>
     </AppContainer>
   );

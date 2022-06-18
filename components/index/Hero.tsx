@@ -45,7 +45,7 @@ function Hero() {
         <div className="text">
           <KH1>New Delhi Space Society</KH1>
           <KSubtitle>
-            A Chapter of the{" "}
+            An Award Winning Chapter of the{" "}
             <a
               href={nssUrl}
               target="_blank"
@@ -54,7 +54,12 @@ function Hero() {
               National Space Society
             </a>
           </KSubtitle>
-          <a href="https://forms.gle/xwbRGFx9fGyASD5B9" target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>
+          <a
+            href="https://forms.gle/xwbRGFx9fGyASD5B9"
+            target="_blank"
+            rel="noreferrer"
+            style={{ cursor: "pointer" }}
+          >
             <Button buttonVariant="primary" buttonType="outlinedBG">
               Join Us
             </Button>
