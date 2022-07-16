@@ -40,10 +40,7 @@ const MemberImage = styled.img`
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
   return (
     <MemberCardContainer>
-      <MemberImage
-        src={require(`../../public/members/${member.image}`)}
-        alt=""
-      />
+      <MemberImage src={`members/${member.image}`} alt="" />
       <KH3>{member.name}</KH3>
       <KSmall style={{ color: "#333" }}>{member.role}</KSmall>
     </MemberCardContainer>

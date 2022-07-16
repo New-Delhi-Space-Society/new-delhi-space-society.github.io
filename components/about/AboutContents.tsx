@@ -62,17 +62,14 @@ export default function AboutContents() {
             civilization beyond Earth, to settle space and to use the resulting
             resources to build a hopeful and prosperous future for humanity.”
           </div>
-          <LogoImage
-            src={require("../../public/logo-1.png")}
-            alt="Vector Graphic"
-          />
+          <LogoImage src={"logo-1.png"} alt="Vector Graphic" />
         </HistoryContainer>
       </SubHeadingContents>
       <SubHeadingContents title="What principals do we follow?">
         <PrincipalsContainer>
           <img
             style={{ maxWidth: "100%", height: "auto" }}
-            src={require("../../public/milky-way.jpeg")}
+            src={"milky-way.jpeg"}
             alt="Vector Graphic"
           />
           <div className="content">

@@ -83,7 +83,7 @@ export default function Navbar() {
         <Link href="/">
           <img
             style={{ cursor: "pointer" }}
-            src={require("../public/badge.png")}
+            src="badge.png"
             width={117}
             height={83}
           />
@@ -98,7 +98,12 @@ export default function Navbar() {
             </Link>
           ))}
           <NavLink>
-            <a href="https://forms.gle/xwbRGFx9fGyASD5B9" target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>
+            <a
+              href="https://forms.gle/xwbRGFx9fGyASD5B9"
+              target="_blank"
+              rel="noreferrer"
+              style={{ cursor: "pointer" }}
+            >
               <Button buttonVariant="secondary" buttonType="normal">
                 Join Us
               </Button>
