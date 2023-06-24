@@ -63,13 +63,6 @@ function Hero() {
             </Button>
           </a>
         </div>
-        <img
-          className="heroImage"
-          src={"bannerpic.jpg"}
-          style={{ maxWidth: "100%", height: "auto" }}
-          height={391}
-          width={484}
-        />
       </HeroContainerTwo>
     </HeroContainer>
   );
