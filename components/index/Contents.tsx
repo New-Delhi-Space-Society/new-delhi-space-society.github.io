@@ -28,13 +28,7 @@ export default function Contents() {
       </SubHeadingContents>
       <SubHeadingContents title="Newspaper Features">
         <div>
-          <ul>
-            <li>The Hindu</li>
-            <li>The Times of India</li>
-            <li>The Indian Express</li>
-            <li>The Economic Times</li>
-            <li>The Tribune</li>
-          </ul>
+          New Delhi Space Society has been featured in Newspapers like Hindustan Times.
         </div>
       </SubHeadingContents>
       <SubHeadingContents title="SpaceTech">

@@ -5,8 +5,8 @@ const SpacetechPage = styled.main`
   text-align: center;
 
   h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   h3 {
@@ -15,9 +15,9 @@ const SpacetechPage = styled.main`
   }
 
   p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 0rem;
   }
 `;
 
@@ -25,7 +25,7 @@ function Spacetech() {
   return (
     <SpacetechPage>
       <h1>SpaceTech</h1>
-      <h3>Lorem ipsum dolor sit amet</h3>
+      <h4>SpaceTech is an event for space enthusiasts.</h4>
       <p>
         Progress in technology means pushing the boundaries of what is possible,
         not only on earth, but also the final frontier — space. Just as
