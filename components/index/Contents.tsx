@@ -26,6 +26,18 @@ export default function Contents() {
           <li>Honourable Mention Award (2022)</li>
         </ul>
       </SubHeadingContents>
+      <SubHeadingContents title="Newspaper Features">
+        <div>
+          <h3>Featured in Newspapers</h3>
+          <ul>
+            <li>The Hindu</li>
+            <li>The Times of India</li>
+            <li>The Indian Express</li>
+            <li>The Economic Times</li>
+            <li>The Tribune</li>
+          </ul>
+        </div>
+      </SubHeadingContents>
       <SubHeadingContents title="SpaceTech">
         Progress in technology means pushing the boundaries of what is possible,
         not only on earth, but also the final frontier — space. Just as
