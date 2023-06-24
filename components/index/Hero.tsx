@@ -48,24 +48,8 @@ const JoinUsLink = styled.a`
   text-decoration: none;
 `;
 
-const FeaturedCard = styled.div`
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 4px;
-  margin-top: 16px;
-
-  @media ${device.lg} {
-    margin-top: 0;
-    width: 40%;
-  }
-`;
-
-const FeaturedTitle = styled(KH1)`
-  margin-bottom: 8px;
-`;
-
-const FeaturedDescription = styled(KSubtitle)`
-  margin-bottom: 16px;
+const AwardsSection = styled.div`
+  margin-top: 24px;
 `;
 
 const FeaturedStuffCard = () => {
@@ -121,8 +105,11 @@ function Hero() {
               Join Us
             </Button>
           </JoinUsLink>
-          <FeaturedStuffCard />
         </div>
+        <AwardsSection>
+          <h2>Awards</h2>
+          <FeaturedStuffCard />
+        </AwardsSection>
       </HeroContainerTwo>
     </HeroContainer>
   );
