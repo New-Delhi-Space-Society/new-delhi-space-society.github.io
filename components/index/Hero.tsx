@@ -48,7 +48,6 @@ const HeroContainer = styled.div`
   height: 100%;
 `;
 
-<<<<<<< HEAD
 const HeroContainerTwo = styled(AppContainer)`
   color: #ffffff;
   padding: 24px;
@@ -88,8 +87,6 @@ const AwardsSection = styled.div`
   margin-top: 24px;
 `;
 
-=======
->>>>>>> parent of cbe2704 (Update Hero.tsx)
 const Hero = () {
   return (
     <HeroContainer>
