@@ -88,43 +88,6 @@ const AwardsSection = styled.div`
 `;
 
 const Hero = () {
-const HeroContainerTwo = styled(AppContainer)`
-  color: #ffffff;
-  padding: 24px;
-  margin-bottom: 8px;
-  height: 100%;
-
-  flex-direction: column-reverse;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  text-align: center;
-
-  @media ${device.lg} {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  * {
-    margin: 8px 0;
-  }
-`;
-
-const ColoredText = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 4px 8px;
-  display: inline-block;
-`;
-
-const JoinUsLink = styled.a`
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-`;
-
-function Hero() {
->>>>>>> parent of cdbbda9 (featured card)
   return (
     <HeroContainer>
       <HeroContainerTwo>
