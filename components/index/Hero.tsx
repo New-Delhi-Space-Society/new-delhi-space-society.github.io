@@ -67,7 +67,7 @@ function Hero() {
         </div>
         <img
           className="heroImage"
-          src={"Hero.png"}
+          src={"https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg"}
           style={{ maxWidth: "100%", height: "auto" }}
           height={391}
           width={484}
