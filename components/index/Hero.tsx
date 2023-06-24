@@ -34,10 +34,11 @@ const HeroContainerTwo = styled(AppContainer)`
   * {
     margin: 8px 0;
   }
+`;
 
-  a {
-    text-align: center;
-  }
+const JoinUsLink = styled.a`
+  display: flex;
+  justify-content: center;
 `;
 
 function Hero() {
@@ -56,7 +57,7 @@ function Hero() {
               National Space Society
             </a>
           </KSubtitle>
-          <a
+          <JoinUsLink
             href="https://forms.gle/xwbRGFx9fGyASD5B9"
             target="_blank"
             rel="noreferrer"
@@ -65,7 +66,7 @@ function Hero() {
             <Button buttonVariant="primary" buttonType="outlinedBG">
               Join Us
             </Button>
-          </a>
+          </JoinUsLink>
         </div>
       </HeroContainerTwo>
     </HeroContainer>
