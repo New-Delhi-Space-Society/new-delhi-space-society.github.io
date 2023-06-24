@@ -37,7 +37,7 @@ const HeroContainerTwo = styled(AppContainer)`
 `;
 
 const ColoredText = styled.div`
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 4px 8px;
   display: inline-block;
 `;
