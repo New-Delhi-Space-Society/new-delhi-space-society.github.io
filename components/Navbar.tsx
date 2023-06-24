@@ -23,6 +23,10 @@ const navLinks: NavbarLink[] = [
     text: "About",
   },
   {
+    to: "/spacetech",
+    text: "SpaceTech",
+  },
+  {
     to: "/members",
     text: "Members",
   },
