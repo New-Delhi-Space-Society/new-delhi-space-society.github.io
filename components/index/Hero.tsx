@@ -5,6 +5,41 @@ import Button from "../Button";
 import { KH1, KSubtitle } from "../Typography";
 import { nssUrl } from "../../config";
 
+const FeaturedCard = styled.div`
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 16px;
+
+  @media ${device.lg} {
+    margin-top: 0;
+    width: 40%;
+  }
+`;
+
+const FeaturedTitle = styled(KH1)`
+  margin-bottom: 8px;
+`;
+
+const FeaturedDescription = styled(KSubtitle)`
+  margin-bottom: 16px;
+`;
+
+const FeaturedStuffCard = ({ children }) => {
+  return (
+    <FeaturedCard>
+      <FeaturedTitle>Featured Stuff</FeaturedTitle>
+      <FeaturedDescription>
+        This card shows featured stuff, such as where the society is located and
+        newspapers the website has been featured in.
+      </FeaturedDescription>
+      {children}
+    </FeaturedCard>
+  );
+};
+
+export default FeaturedStuffCard;
+
 const HeroContainer = styled.div`
   background-image: url('bannerpic.jpg');
   background-size: cover;
@@ -52,30 +87,7 @@ const AwardsSection = styled.div`
   margin-top: 24px;
 `;
 
-const FeaturedStuffCard = () => {
-  return (
-    <FeaturedCard>
-      <FeaturedTitle>Featured Stuff</FeaturedTitle>
-      <FeaturedDescription>
-        This card shows featured stuff, such as where the society is located and
-        newspapers the website has been featured in.
-      </FeaturedDescription>
-      <ul>
-        <li>
-          <a href="#">New Delhi, India</a>
-        </li>
-        <li>
-          <a href="#">The Hindu</a>
-        </li>
-        <li>
-          <a href="#">Times of India</a>
-        </li>
-      </ul>
-    </FeaturedCard>
-  );
-};
-
-function Hero() {
+const Hero = () {
   return (
     <HeroContainer>
       <HeroContainerTwo>
