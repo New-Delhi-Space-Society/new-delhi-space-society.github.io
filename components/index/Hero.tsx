@@ -36,6 +36,12 @@ const HeroContainerTwo = styled(AppContainer)`
   }
 `;
 
+const ColoredText = styled.div`
+  background-color: black;
+  padding: 4px 8px;
+  display: inline-block;
+`;
+
 const JoinUsLink = styled.a`
   display: flex;
   justify-content: center;
@@ -47,16 +53,20 @@ function Hero() {
     <HeroContainer>
       <HeroContainerTwo>
         <div className="text">
-          <KH1>New Delhi Space Society</KH1>
+          <ColoredText>
+            <KH1>New Delhi Space Society</KH1>
+          </ColoredText>
           <KSubtitle>
-            An Award Winning Chapter of the{" "}
-            <a
-              href={nssUrl}
-              target="_blank"
-              style={{ fontWeight: "bold", color: "#ffffff" }}
-            >
-              National Space Society
-            </a>
+            <ColoredText>
+              An Award Winning Chapter of the{" "}
+              <a
+                href={nssUrl}
+                target="_blank"
+                style={{ fontWeight: "bold", color: "#ffffff" }}
+              >
+                National Space Society
+              </a>
+            </ColoredText>
           </KSubtitle>
           <JoinUsLink
             href="https://forms.gle/xwbRGFx9fGyASD5B9"
