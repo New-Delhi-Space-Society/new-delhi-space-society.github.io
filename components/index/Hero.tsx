@@ -68,6 +68,29 @@ const FeaturedDescription = styled(KSubtitle)`
   margin-bottom: 16px;
 `;
 
+const FeaturedStuffCard = () => {
+  return (
+    <FeaturedCard>
+      <FeaturedTitle>Featured Stuff</FeaturedTitle>
+      <FeaturedDescription>
+        This card shows featured stuff, such as where the society is located and
+        newspapers the website has been featured in.
+      </FeaturedDescription>
+      <ul>
+        <li>
+          <a href="#">New Delhi, India</a>
+        </li>
+        <li>
+          <a href="#">The Hindu</a>
+        </li>
+        <li>
+          <a href="#">Times of India</a>
+        </li>
+      </ul>
+    </FeaturedCard>
+  );
+};
+
 function Hero() {
   return (
     <HeroContainer>
@@ -98,14 +121,7 @@ function Hero() {
               Join Us
             </Button>
           </JoinUsLink>
-          <FeaturedCard>
-            <FeaturedTitle>Featured Stuff</FeaturedTitle>
-            <FeaturedDescription>
-              This is a card for showing featured stuff. You can put anything
-              you want in here, such as upcoming events, new articles, or
-              interesting links.
-            </FeaturedDescription>
-          </FeaturedCard>
+          <FeaturedStuffCard />
         </div>
       </HeroContainerTwo>
     </HeroContainer>
