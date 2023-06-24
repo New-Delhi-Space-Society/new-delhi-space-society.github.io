@@ -17,12 +17,21 @@ const spacetechContainer = styled.div`
 `;
 
 
+const SpaceTechPage = ({ children }) => (
+  <AppContainer>
+    <spacetechContainer>
+      {children}
+    </spacetechContainer>
+  </AppContainer>
+);
+
+export default SpaceTechPage;
+
 export default function spacetechContents() {
   return (
-    <AppContainer>
-      <SubHeadingContents title="SpaceTech">
-        <div className="content" style={{ marginRight: "4px" }}>
-          The Exunclan SpaceTech event is a student-led initiative that
+    <SubHeadingContents title="SpaceTech">
+      <div className="content" style={{ marginRight: "4px" }}>
+        The Exunclan SpaceTech event is a student-led initiative that
             aims to promote space science and technology among high school
             students. The event is organized by Exunclan, a student
             organization at Delhi Public School R.K. Puram.
@@ -48,6 +57,5 @@ export default function spacetechContents() {
             interested in space science and technology.
         </div>
       </SubHeadingContents>
-    </AppContainer>
   );
 }
