@@ -7,6 +7,8 @@ export const lightTheme: DefaultTheme = {
     text: "#000000",
     primaryMain: "#1C1436",
     primaryHover: "#2C2055",
+    bannercolor: "#081a26",
+    bannercolor2 : "#5b4257"
     secondaryMain: "#6E55C0",
     secondaryHover: "#6951B8",
   },
