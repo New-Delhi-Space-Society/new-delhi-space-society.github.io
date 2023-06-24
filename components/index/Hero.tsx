@@ -8,8 +8,8 @@ import { nssUrl } from "../../config";
 const HeroContainer = styled.div`
   background: linear-gradient(
     to right,
-    ${lightTheme.colors.primaryMain},
-    ${lightTheme.colors.secondaryMain}
+    ${lightTheme.colors.bannercolor},
+    ${lightTheme.colors.bannercolor2}
   );
   width: 100%;
   height: 100%;
