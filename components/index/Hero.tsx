@@ -39,6 +39,7 @@ const HeroContainerTwo = styled(AppContainer)`
 const JoinUsLink = styled.a`
   display: flex;
   justify-content: center;
+  text-decoration: none;
 `;
 
 function Hero() {
