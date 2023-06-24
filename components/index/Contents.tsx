@@ -16,9 +16,8 @@ export default function Contents() {
         limited to that, we also do outreach programs, hold and take part in
         competitions and various other activities to reach our goal and spread
         awareness about space. We are a growing group of aerospace aficionados
-        and are actively looking for your support! Learn more in the <a herf="https://newdelhi.nss.org/about" target="_blank"> ‘About Us’
+        and are actively looking for your support! Learn more in the `About Us`
         section and volunteer your efforts!
-        </a>
       </SubHeadingContents>
       <SubHeadingContents title="Awards">
         The New Delhi Space Society has been awarded with the following:
