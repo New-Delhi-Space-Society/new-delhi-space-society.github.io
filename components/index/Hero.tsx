@@ -67,7 +67,7 @@ function Hero() {
         </div>
         <img
           className="heroImage"
-          src={"https://i.ibb.co/VHMJ7L1/0-1-2-Jpe-PZHVp-Q-transformed-1.jpg"}
+          src={"bannerpic.jpg"}
           style={{ maxWidth: "100%", height: "auto" }}
           height={391}
           width={484}
