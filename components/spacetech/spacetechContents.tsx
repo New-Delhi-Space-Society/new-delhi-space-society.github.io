@@ -17,7 +17,7 @@ const spacetechContainer = styled.div`
 `;
 
 
-export default function AboutContents() {
+export default function spacetechContents() {
   return (
     <AppContainer>
       <SubHeadingContents title="SpaceTech">
