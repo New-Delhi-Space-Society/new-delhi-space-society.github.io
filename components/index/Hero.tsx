@@ -34,6 +34,10 @@ const HeroContainerTwo = styled(AppContainer)`
   * {
     margin: 8px 0;
   }
+
+  a {
+    text-align: center;
+  }
 `;
 
 function Hero() {
