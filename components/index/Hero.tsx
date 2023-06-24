@@ -6,11 +6,9 @@ import { KH1, KSubtitle } from "../Typography";
 import { nssUrl } from "../../config";
 
 const HeroContainer = styled.div`
-  background: linear-gradient(
-    to right,
-    ${lightTheme.colors.bannercolor},
-    ${lightTheme.colors.bannercolor2}
-  );
+  background-image: url('bannerpic.jpg');
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
 `;
