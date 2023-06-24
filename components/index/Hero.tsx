@@ -48,32 +48,6 @@ const JoinUsLink = styled.a`
   text-decoration: none;
 `;
 
-const CardContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 24px;
-
-  > div {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-`;
-
-const NewspaperCard = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  width: 200px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #000000;
-`;
-
 function Hero() {
   return (
     <HeroContainer>
@@ -104,12 +78,6 @@ function Hero() {
               Join Us
             </Button>
           </JoinUsLink>
-          <CardContainer>
-            <NewspaperCard>The New York Times</NewspaperCard>
-            <NewspaperCard>The Guardian</NewspaperCard>
-            <NewspaperCard>The Times of India</NewspaperCard>
-            {/* Add more NewspaperCard components with the names of other newspapers */}
-          </CardContainer>
         </div>
       </HeroContainerTwo>
     </HeroContainer>
