@@ -1,6 +1,91 @@
-// components/index/Hero.tsx
+import styled from "styled-components";
+import { device, lightTheme } from "../../ThemeConfig";
+import AppContainer from "../AppContainer";
+import Button from "../Button";
+import { KH1, KSubtitle } from "../Typography";
+import { nssUrl } from "../../config";
 
-import FeaturedStuffCard from "./FeaturedStuffCard";
+const FeaturedCard = styled.div`
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 16px;
+
+  @media ${device.lg} {
+    margin-top: 0;
+    width: 40%;
+  }
+`;
+
+const FeaturedTitle = styled(KH1)`
+  margin-bottom: 8px;
+`;
+
+const FeaturedDescription = styled(KSubtitle)`
+  margin-bottom: 16px;
+`;
+
+const FeaturedStuffCard = ({ children }) => {
+  return (
+    <FeaturedCard>
+      <FeaturedTitle>Featured Stuff</FeaturedTitle>
+      <FeaturedDescription>
+        This card shows featured stuff, such as where the society is located and
+        newspapers the website has been featured in.
+      </FeaturedDescription>
+      {children}
+    </FeaturedCard>
+  );
+};
+
+export default FeaturedStuffCard;
+
+const HeroContainer = styled.div`
+  background-image: url('bannerpic.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+`;
+
+const HeroContainerTwo = styled(AppContainer)`
+  color: #ffffff;
+  padding: 24px;
+  margin-bottom: 8px;
+  height: 100%;
+
+  flex-direction: column-reverse;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: center;
+
+  @media ${device.lg} {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  * {
+    margin: 8px 0;
+  }
+`;
+
+const ColoredText = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  display: inline-block;
+`;
+
+const JoinUsLink = styled.a`
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+`;
+
+const AwardsSection = styled.div`
+  margin-top: 24px;
+`;
 
 const Hero = () {
   return (
@@ -43,43 +128,3 @@ const Hero = () {
 }
 
 export default Hero;
-
-// components/FeaturedStuffCard.tsx
-
-import styled from "styled-components";
-import { KH1, KSubtitle } from "../Typography";
-
-const FeaturedCard = styled.div`
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 4px;
-  margin-top: 16px;
-
-  @media ${device.lg} {
-    margin-top: 0;
-    width: 40%;
-  }
-`;
-
-const FeaturedTitle = styled(KH1)`
-  margin-bottom: 8px;
-`;
-
-const FeaturedDescription = styled(KSubtitle)`
-  margin-bottom: 16px;
-`;
-
-const FeaturedStuffCard = ({ children }) => {
-  return (
-    <FeaturedCard>
-      <FeaturedTitle>Featured Stuff</FeaturedTitle>
-      <FeaturedDescription>
-        This card shows featured stuff, such as where the society is located and
-        newspapers the website has been featured in.
-      </FeaturedDescription>
-      {children}
-    </FeaturedCard>
-  );
-};
-
-export default FeaturedStuffCard;
