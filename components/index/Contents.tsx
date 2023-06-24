@@ -5,7 +5,7 @@ import { nssUrl } from "../../config";
 export default function Contents() {
   return (
     <AppContainer>
-      <SubHeadingContents title="Introduction">
+    <SubHeadingContents title="Introduction">
         With a goal of making advancement in space science and aerospace
         engineering, we are a group of space enthusiasts who formed the New
         Delhi Space Society, a chapter of{" "}
@@ -18,7 +18,7 @@ export default function Contents() {
         awareness about space. We are a growing group of aerospace aficionados
         and are actively looking for your support! Learn more in the `About Us`
         section and volunteer your efforts!
-      </SubHeadingContents>
+    </SubHeadingContents>
       <SubHeadingContents title="Awards">
         The New Delhi Space Society has been awarded with the following:
         <ul>
@@ -50,11 +50,6 @@ export default function Contents() {
         realms of space and its concurrence with technology. The event typically
         has multiple challenging rounds, building up to a final presentation
         round — with a twist!
-        {/* <img */}
-        {/*   style={{ maxWidth: "100%", height: "auto" }} */}
-        {/*   src="https://via.placeholder.com/940x500" */}
-        {/*   alt="Placeholder Slideshow" */}
-        {/* /> */}
       </SubHeadingContents>
     </AppContainer>
   );
