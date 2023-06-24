@@ -48,6 +48,26 @@ const JoinUsLink = styled.a`
   text-decoration: none;
 `;
 
+const FeaturedCard = styled.div`
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 16px;
+
+  @media ${device.lg} {
+    margin-top: 0;
+    width: 40%;
+  }
+`;
+
+const FeaturedTitle = styled(KH1)`
+  margin-bottom: 8px;
+`;
+
+const FeaturedDescription = styled(KSubtitle)`
+  margin-bottom: 16px;
+`;
+
 function Hero() {
   return (
     <HeroContainer>
@@ -78,6 +98,14 @@ function Hero() {
               Join Us
             </Button>
           </JoinUsLink>
+          <FeaturedCard>
+            <FeaturedTitle>Featured Stuff</FeaturedTitle>
+            <FeaturedDescription>
+              This is a card for showing featured stuff. You can put anything
+              you want in here, such as upcoming events, new articles, or
+              interesting links.
+            </FeaturedDescription>
+          </FeaturedCard>
         </div>
       </HeroContainerTwo>
     </HeroContainer>
