@@ -6,6 +6,7 @@ export const KH1 = styled.h1`
   font-weight: bold;
   letter-spacing: -4.5%;
   line-height: 100%;
+  font-family: Poppins;
 `;
 
 export const KH2 = styled.h2`
@@ -27,6 +28,7 @@ export const KSubtitle = styled.p`
 export const KBody = styled.p`
   font-size: 16px;
   line-height: 140%;
+  font-family: "Roboto Flex", sans-serif;
 `;
 
 export const KStrong = styled.strong`
