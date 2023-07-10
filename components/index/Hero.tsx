@@ -22,9 +22,9 @@ const HeroContainerTwo = styled(AppContainer)`
   flex-direction: column-reverse;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
 
-  text-align: center;
+  text-align: left;
 
   @media ${device.lg} {
     flex-direction: row;
