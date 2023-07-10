@@ -58,7 +58,7 @@ function Hero() {
       <HeroContainerTwo>
         <div className="text">
           <ColoredText>
-            <KH1>New Delhi Space Society</KH1>
+            <KH1 style={{fontFamily: "Poppins"}}>New Delhi Space Society</KH1>
           </ColoredText>
           <KSubtitle>
             <ColoredText>
