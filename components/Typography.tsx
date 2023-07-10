@@ -6,27 +6,32 @@ export const KH1 = styled.h1`
   font-weight: bold;
   letter-spacing: -4.5%;
   line-height: 100%;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const KH2 = styled.h2`
   font-size: 32px;
   font-weight: bold;
   letter-spacing: -2%;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const KH3 = styled.h3`
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -2%;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const KSubtitle = styled.p`
   font-size: 20px;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const KBody = styled.p`
   font-size: 16px;
   line-height: 140%;
+  font-family: "Roboto Flex", sans-serif;
 `;
 
 export const KStrong = styled.strong`
