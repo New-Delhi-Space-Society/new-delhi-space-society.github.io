@@ -19,10 +19,10 @@ const HeroContainerTwo = styled(AppContainer)`
   margin-bottom: 8px;
   height: 100%;
 
-  flex-direction: column-reverse;
   display: flex;
-  justify-content: space-evenly;
-  align-items: left;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 
   text-align: left;
 
