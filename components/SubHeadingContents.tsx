@@ -1,9 +1,10 @@
 import { KBody } from "./Typography";
 
-const SubHeadingContents: React.FunctionComponent<iSubHeadingContentsProps> = ({
-  title,
-  children,
-}) => {
+interface SubHeadingContentsProps {
+  title: string;
+}
+
+const SubHeadingContents: React.FC<SubHeadingContentsProps> = ({ title, children }) => {
   return (
     <div className="content">
       <KBody style={{ margin: "32px 0 8px 0" }}>{title}</KBody>
@@ -11,3 +12,5 @@ const SubHeadingContents: React.FunctionComponent<iSubHeadingContentsProps> = ({
     </div>
   );
 };
+
+export default SubHeadingContents;
