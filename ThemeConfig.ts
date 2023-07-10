@@ -15,9 +15,14 @@ interface IColors {
 declare module "styled-components" {
   export interface DefaultTheme {
     colors: IColors;
-    font: string;
+    font: Font;
   }
 }
+
+type Font = {
+  title: string;
+  body: string;
+};
 
 export const lightTheme: DefaultTheme = {
   colors: {
