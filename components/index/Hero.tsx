@@ -21,8 +21,8 @@ const HeroContainerTwo = styled(AppContainer)`
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: flex-start; /* Updated */
+  align-items: flex-start; /* Updated */
 
   text-align: left;
 
@@ -39,6 +39,7 @@ const HeroContainerTwo = styled(AppContainer)`
     font-family: Poppins;
   }
 `;
+
 
 const ColoredText = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
