@@ -21,9 +21,8 @@ const HeroContainerTwo = styled(AppContainer)`
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Updated */
-  align-items: flex-start; /* Updated */
-
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: left;
 
   @media ${device.lg} {
@@ -37,12 +36,13 @@ const HeroContainerTwo = styled(AppContainer)`
 
   .text {
     font-family: Poppins;
+    text-align: left; /* Added */
   }
 `;
 
 
 const ColoredText = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  
   padding: 4px 8px;
   display: inline-block;
 `;
