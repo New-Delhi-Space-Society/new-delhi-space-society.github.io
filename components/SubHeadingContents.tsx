@@ -1,8 +1,4 @@
-import { KContentHeadings } from "./Typography";
-
-interface iSubHeadingContentsProps {
-  title: string;
-}
+import { KBody } from "./Typography";
 
 const SubHeadingContents: React.FunctionComponent<iSubHeadingContentsProps> = ({
   title,
@@ -10,12 +6,8 @@ const SubHeadingContents: React.FunctionComponent<iSubHeadingContentsProps> = ({
 }) => {
   return (
     <div className="content">
-      <KContentHeadings style={{ margin: "32px 0 8px 0" }}>
-        {title}
-      </KContentHeadings>
+      <KBody style={{ margin: "32px 0 8px 0" }}>{title}</KBody>
       {children}
     </div>
   );
 };
-
-export default SubHeadingContents;
