@@ -31,8 +31,10 @@ const HeroContainerTwo = styled(AppContainer)`
     text-align: left;
   }
 
-  * {
+  /* use the specific element selector for KH1 */
+  ${KH1} {
     margin: 8px 0;
+    font-family: Poppins;
   }
 
   .text {
@@ -58,7 +60,7 @@ function Hero() {
       <HeroContainerTwo>
         <div className="text">
           <ColoredText>
-            <KH1 style={{fontFamily: "Poppins"}}>New Delhi Space Society</KH1>
+            <KH1>New Delhi Space Society</KH1>
           </ColoredText>
           <KSubtitle>
             <ColoredText>
