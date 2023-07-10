@@ -30,7 +30,10 @@ export const lightTheme: DefaultTheme = {
     secondaryMain: "#6E55C0",
     secondaryHover: "#6951B8",
   },
-  font: "'Poppins', Helvetica, Trebuchet MS, Verdana",
+  font: {
+    title: "'Poppins', Helvetica, Trebuchet MS, Verdana",
+    body: "Roboto",
+  },
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -42,10 +45,15 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.colors.body};
     color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.font};
+    font-family: ${({ theme }) => theme.font.title};
     font-size: 16px;
     min-height: 100vh;
     position: relative;
+  }
+  body {
+    font-family: ${({ theme }) => theme.font.body};
+    font-size: 16px;
+    flex: 1;
   }
 `;
 
