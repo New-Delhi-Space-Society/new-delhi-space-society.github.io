@@ -1,4 +1,4 @@
-import { KBody } from "./Typography";
+import { KH2, KBody } from "./Typography";
 
 interface SubHeadingContentsProps {
   title: string;
@@ -7,8 +7,8 @@ interface SubHeadingContentsProps {
 const SubHeadingContents: React.FC<SubHeadingContentsProps> = ({ title, children }) => {
   return (
     <div className="content">
-      <KBody style={{ margin: "32px 0 8px 0" }}>{title}</KBody>
-      {children}
+      <KH2 style={{ margin: "32px 0 8px 0" }}>{title}</KH2>
+      <KBody>{children}</KBody>
     </div>
   );
 };
