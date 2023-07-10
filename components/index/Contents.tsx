@@ -3,7 +3,6 @@ import SubHeadingContents from "../SubHeadingContents";
 import { nssUrl } from "../../config";
 import { KBody } from "../Typography";
 
-
 export default function Contents() {
   return (
     <AppContainer>
@@ -13,7 +12,7 @@ export default function Contents() {
           <a href={nssUrl} target="_blank">
             National Space Society
           </a>
-          . We conduct research and explore the nuances in space, but we are not limited to that, we also do outreach programs, hold and take part in competitions and various other activities to reach our goal and spread awareness about space. We are a growing group of aerospace aficionados and are actively looking for your support! Learn more in the About Us section and volunteer your efforts!
+          . We conduct research and explore the nuances in space, but we are not limited to that; we also do outreach programs, hold and take part in competitions and various other activities to reach our goal and spread awareness about space. We are a growing group of aerospace aficionados and are actively looking for your support! Learn more in the About Us section and volunteer your efforts!
         </KBody>
       </SubHeadingContents>
       <SubHeadingContents title="Awards">
@@ -34,8 +33,5 @@ export default function Contents() {
         </KBody>
       </SubHeadingContents>
     </AppContainer>
-  );
-}
-
   );
 }
