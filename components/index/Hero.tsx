@@ -23,7 +23,6 @@ const HeroContainerTwo = styled(AppContainer)`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  text-align: left;
 
   @media ${device.lg} {
     flex-direction: row;
@@ -37,7 +36,6 @@ const HeroContainerTwo = styled(AppContainer)`
 
   .text {
     font-family: Poppins;
-    text-align: left;
     align-self: flex-start; 
   }
 `;
@@ -54,11 +52,9 @@ const JoinUsLink = styled.a`
 `;
 
 const Title = styled(KH1)`
-  text-align: left;
 `;
 
 const Tagline = styled(KSubtitle)`
-  text-align: left;
 `;
 
 function Hero() {
