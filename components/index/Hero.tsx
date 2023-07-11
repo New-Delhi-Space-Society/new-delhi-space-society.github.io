@@ -36,7 +36,7 @@ const HeroContainerTwo = styled(AppContainer)`
 
   .text {
     font-family: Poppins;
-    align-self: flex-start; 
+    align-self: left; 
   }
 `;
 
