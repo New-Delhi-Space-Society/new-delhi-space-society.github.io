@@ -36,13 +36,11 @@ const HeroContainerTwo = styled(AppContainer)`
 
   .text {
     font-family: Poppins;
-    text-align: left; /* Added */
+    text-align: left;
   }
 `;
 
-
 const ColoredText = styled.div`
-  
   padding: 4px 8px;
   display: inline-block;
 `;
@@ -53,15 +51,23 @@ const JoinUsLink = styled.a`
   text-decoration: none;
 `;
 
+const Title = styled(KH1)`
+  text-align: left;
+`;
+
+const Tagline = styled(KSubtitle)`
+  text-align: left;
+`;
+
 function Hero() {
   return (
     <HeroContainer>
       <HeroContainerTwo>
         <div className="text">
           <ColoredText>
-            <KH1 style={{fontFamily: "Poppins"}}>New Delhi Space Society</KH1>
+            <Title style={{ fontFamily: "Poppins" }}>New Delhi Space Society</Title>
           </ColoredText>
-          <KSubtitle>
+          <Tagline>
             <ColoredText>
               An Award Winning Chapter of the{" "}
               <a
@@ -72,7 +78,7 @@ function Hero() {
                 National Space Society
               </a>
             </ColoredText>
-          </KSubtitle>
+          </Tagline>
           <JoinUsLink
             href="https://forms.gle/xwbRGFx9fGyASD5B9"
             target="_blank"
