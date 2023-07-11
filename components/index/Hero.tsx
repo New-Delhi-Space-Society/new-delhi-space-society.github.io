@@ -27,7 +27,7 @@ const HeroContainerTwo = styled(AppContainer)`
   @media ${device.lg} {
     flex-direction: row;
     justify-content: space-between;
-    align-items: left;
+    align-items: start;
   }
 
   * {
@@ -36,7 +36,6 @@ const HeroContainerTwo = styled(AppContainer)`
 
   .text {
     font-family: Poppins;
-    align-self: start; 
     text-align: left;
   }
 `;
