@@ -14,6 +14,7 @@ const HeroContainer = styled.div`
 `;
 
 const HeroContainerTwo = styled(AppContainer)`
+  color: #ffffff;
   padding: 24px;
   margin-bottom: 8px;
   height: 100%;
