@@ -6,7 +6,7 @@ import { KH1, KSubtitle } from "../Typography";
 import { nssUrl } from "../../config";
 
 const HeroContainer = styled.div`
-  background-image: url('https://media.discordapp.net/attachments/1122211991549911181/1128019513384910908/WhatsApp_Image_2023-07-09_at_00.35.20.jpeg?width=1440&height=375');
+  background-image: url('https://media.discordapp.net/attachments/1122211991549911181/1128570659048538112/ndss_banner_1.png?width=1440&height=373');
   background-size: cover;
   background-position: center;
   width: 100%;
