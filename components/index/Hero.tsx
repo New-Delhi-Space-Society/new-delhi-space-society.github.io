@@ -52,6 +52,8 @@ const Tagline = styled(KSubtitle)`
 `;
 
 function Hero() {
+  const formLink = "https://forms.gle/xwbRGFx9fGyASD5B9";
+
   return (
     <HeroContainer>
       <HeroContainerTwo>
@@ -71,16 +73,11 @@ function Hero() {
               </a>
             </ColoredText>
           </Tagline>
-          <JoinUsLink
-            href="https://forms.gle/xwbRGFx9fGyASD5B9"
-            target="_blank"
-            rel="noreferrer"
-            style={{ cursor: "pointer" }}
-          >
+          <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>
             <Button buttonVariant="primary" buttonType="outlinedBG">
               Join Us
             </Button>
-          </JoinUsLink>
+          </a>
         </div>
       </HeroContainerTwo>
     </HeroContainer>
