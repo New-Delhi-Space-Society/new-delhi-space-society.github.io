@@ -42,14 +42,7 @@ const HeroContainerTwo = styled(AppContainer)`
 `;
 
 const ColoredText = styled.div`
-  padding: 4px 8px;
   display: inline-block;
-`;
-
-const JoinUsLink = styled.a`
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
 `;
 
 const Title = styled(KH1)`
