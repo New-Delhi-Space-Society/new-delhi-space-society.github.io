@@ -30,9 +30,13 @@ const MemberCardContainer = styled.div`
     height: 200px;
     border-radius: 0;
     position: relative;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .MemberImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
