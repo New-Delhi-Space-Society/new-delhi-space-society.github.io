@@ -6,6 +6,7 @@ interface IColors {
   text: string;
   primaryMain: string;
   primaryHover: string;
+  primaryDark: string;
   bannercolor: string;
   bannercolor2: string;
   secondaryMain: string;
@@ -25,6 +26,7 @@ export const lightTheme: DefaultTheme = {
     text: "#000000",
     primaryMain: "#464D65",
     primaryHover: "#2C2055",
+    primaryDark: "#00675b",
     bannercolor: "#081a26",
     bannercolor2: "#5b4257",
     secondaryMain: "#6E55C0",
