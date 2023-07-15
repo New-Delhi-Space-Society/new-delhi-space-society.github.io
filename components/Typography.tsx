@@ -10,10 +10,13 @@ export const KH1 = styled.h1`
 `;
 
 export const KH2 = styled.h2`
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: -2%;
   font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.04px;
+  color: #464D65;
 `;
 
 export const KH3 = styled.h3`
