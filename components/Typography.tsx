@@ -17,7 +17,7 @@ export const KH2 = styled.h2`
   font-weight: 700;
   line-height: normal;
   letter-spacing: -1.04px;
-  color: #464D65;
+  color: #464d65;
 `;
 
 export const KH3 = styled.h3`
@@ -67,7 +67,7 @@ export const KContentHeadings = styled(KH2)`
 `;
 
 const removeUnderline = () => {
-  const button = document.querySelector(".button-class");
+  const button = document.querySelector(".button-class") as HTMLButtonElement;
   if (button) {
     button.style.textDecoration = "none";
   }
