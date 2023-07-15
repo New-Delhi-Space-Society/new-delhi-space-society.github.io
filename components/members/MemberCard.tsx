@@ -30,13 +30,18 @@ const MemberImage = styled.img`
   flex-shrink: 0;
   border-radius: 16px;
   object-fit: cover;
+  margin-bottom: 16px; /* add margin-bottom */
+`;
+
+const MemberName = styled(KH3)`
+  margin-top: 16px; /* add margin-top */
 `;
 
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
   return (
     <MemberCardContainer>
       <MemberImage src={`members/${member.image}`} alt={`${member.name} Image`} />
-      <KH3>{member.name}</KH3>
+      <MemberName>{member.name}</MemberName>
       <KSmall style={{ color: "#333" }}>{member.role}</KSmall>
     </MemberCardContainer>
   );
