@@ -2,10 +2,9 @@ import styled from "styled-components";
 import { MemberData } from "../../pages/api/members";
 import { device } from "../../ThemeConfig";
 import { KH3, KSmall } from "../Typography";
-import Layout from "../Layout";
 
 interface iProps {
-  members: MemberData[];
+  member: MemberData;
 }
 
 const MemberCardContainer = styled.div`
@@ -17,9 +16,12 @@ const MemberCardContainer = styled.div`
   height: 334.262px;
   flex-shrink: 0;
   border-radius: 24px;
-  background: #fff;
+  background: #FFF;
   box-shadow: 0px 8px 24px 16px rgba(112, 144, 176, 0.1);
-  margin-bottom: 32px; /* add vertical spacing */
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const MemberImage = styled.img`
@@ -30,27 +32,12 @@ const MemberImage = styled.img`
   object-fit: cover;
 `;
 
-const MemberName = styled(KH3)`
-  margin-bottom: 8px; /* add bottom spacing */
-`;
-
-const MemberRole = styled(KSmall)`
-  color: #333;
-`;
-
-const MembersContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px 16px; /* add vertical and horizontal gap */
-`;
-
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
   return (
     <MemberCardContainer>
-      <MemberImage src={member.photo} alt={member.name} />
-      <MemberName>{member.name}</MemberName>
-      <MemberRole>{member.role}</MemberRole>
+      <MemberImage src={`members/${member.image}`} alt={`${member.name} Image`} />
+      <KH3>{member.name}</KH3>
+      <KSmall style={{ color: "#333" }}>{member.role}</KSmall>
     </MemberCardContainer>
   );
 };
