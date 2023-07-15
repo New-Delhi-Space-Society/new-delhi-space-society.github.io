@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import styled from "styled-components";
 import { lightTheme } from "../ThemeConfig";
 import { KButtonText } from "./Typography";
@@ -16,9 +16,9 @@ const StyledButton = styled.button<iButtonProps>`
   width: 125px;
   height: 35px;
   padding: 4px 8px;
-  background-color: #548BB2;
+  background-color: #548bb2;
   border-radius: 20px;
-  border: 0px solid var(--primary-main, #FFF);
+  border: 0px solid var(--primary-main, #fff);
   color: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: "Roboto Flex", sans-serif;
