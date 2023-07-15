@@ -1,4 +1,4 @@
-\import styled from "styled-components";
+import styled from "styled-components";
 import { device, lightTheme } from "../../ThemeConfig";
 import AppContainer from "../AppContainer";
 import Button from "../Button";
