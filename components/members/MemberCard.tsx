@@ -9,22 +9,12 @@ interface iProps {
 
 const MemberCardContainer = styled.div`
   text-align: center;
-  box-shadow: 0px 8px 24px 16px rgba(112, 144, 176, 0.2);
-  border-radius: 44px;
-  width: 300px;
-  position: relative;
-  height: 200px;
-  padding: 95px;
-  margin-bottom: 30px;
-  margin-top: 100px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @media ${device.lg} {
-    margin-bottom: 0;
-  }
+  box-shadow: 0px 8px 24px 16px rgba(112, 144, 176, 0.1);
+  border-radius: 24px;
+  width: 232.064px;
+  height: 334.262px;
+  flex-shrink: 0;
+  background-color: #FFF;
 `;
 
 const MemberImage = styled.img`
@@ -48,3 +38,4 @@ const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
 };
 
 export default MemberCard;
+
