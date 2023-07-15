@@ -30,7 +30,7 @@ const HeroContainerTwo = styled(AppContainer)`
     align-items: start;
   }
 
-  {
+  * {
     margin: 8px 0;
   }
 
@@ -45,9 +45,11 @@ const ColoredText = styled.div`
   display: inline-block;
 `;
 
-const Title = styled(KH1)``;
+const Title = styled(KH1)`
+`;
 
-const Tagline = styled(KSubtitle)``;
+const Tagline = styled(KSubtitle)`
+`;
 
 function Hero() {
   const formLink = "https://forms.gle/xwbRGFx9fGyASD5B9";
@@ -62,12 +64,16 @@ function Hero() {
           <Tagline>
             <ColoredText>
               An Award Winning Chapter of the{" "}
-              <a href={nssUrl} target="_blank" style={{ fontWeight: "bold", color: "#ffffff", textDecoration: "none" }}>
+              <a
+                href={nssUrl}
+                target="_blank"
+                style={{ fontWeight: "bold", color: "#ffffff" }}
+              >
                 National Space Society
               </a>
             </ColoredText>
           </Tagline>
-          <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer", textDecoration: "none" }}>
+          <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>
             <Button buttonVariant="primary" buttonType="outlinedBG">
               Join Us
             </Button>
