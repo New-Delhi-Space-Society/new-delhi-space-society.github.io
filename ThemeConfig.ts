@@ -10,6 +10,7 @@ interface IColors {
   bannercolor: string;
   bannercolor2: string;
   secondaryMain: string;
+  secondaryDark: string;
   secondaryHover: string;
 }
 
@@ -30,6 +31,7 @@ export const lightTheme: DefaultTheme = {
     bannercolor: "#081a26",
     bannercolor2: "#5b4257",
     secondaryMain: "#6E55C0",
+    secondaryDark: "#ba000d",
     secondaryHover: "#6951B8",
   },
   font: "'Poppins', Helvetica, Trebuchet MS, Verdana",
