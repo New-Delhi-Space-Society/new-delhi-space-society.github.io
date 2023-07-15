@@ -55,6 +55,7 @@ export const KButtonText = styled.span`
   letter-spacing: 3%;
   text-transform: uppercase;
   text-decoration: none !important;
+  border-bottom: none;
 `;
 
 export const KNavbarText = styled.p`
