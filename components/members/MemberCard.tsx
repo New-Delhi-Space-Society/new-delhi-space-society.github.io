@@ -16,12 +16,9 @@ const MemberCardContainer = styled.div`
   height: 334.262px;
   flex-shrink: 0;
   border-radius: 24px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 8px 24px 16px rgba(112, 144, 176, 0.1);
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin-bottom: 32px; /* add vertical spacing */
 `;
 
 const MemberImage = styled.img`
@@ -32,14 +29,41 @@ const MemberImage = styled.img`
   object-fit: cover;
 `;
 
+const MemberName = styled(KH3)`
+  margin-bottom: 8px; /* add bottom spacing */
+`;
+
+const MemberRole = styled(KSmall)`
+  color: #333;
+`;
+
+const MembersContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 16px; /* add vertical and horizontal gap */
+`;
+
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
   return (
     <MemberCardContainer>
       <MemberImage src={`members/${member.image}`} alt={`${member.name} Image`} />
-      <KH3>{member.name}</KH3>
-      <KSmall style={{ color: "#333" }}>{member.role}</KSmall>
+      <MemberName>{member.name}</MemberName>
+      <MemberRole>{member.role}</MemberRole>
     </MemberCardContainer>
   );
 };
 
-export default MemberCard;
+const MembersPage: NextPage<{ members: MemberData[] }> = ({ members }) => {
+  return (
+    <Layout>
+      <MembersContainer>
+        {members.map((member) => (
+          <MemberCard key={member.id} member={member} />
+        ))}
+      </MembersContainer>
+    </Layout>
+  );
+};
+
+export default MembersPage;
