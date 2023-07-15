@@ -29,11 +29,11 @@ const StyledButton = styled.button<iButtonProps>`
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  text-decoration: none; // Add this line to remove underline
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
-    background-color: #3c6e8f; // Change this line
+    background-color: #3c6e8f;
   }
 `;
 
