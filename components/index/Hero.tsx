@@ -73,10 +73,10 @@ function Hero() {
               </a>
             </ColoredText>
           </Tagline>
-          <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>
-            <Button buttonVariant="primary" buttonType="outlinedBG">
-              Join Us
-            </Button>
+          <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer", textDecoration: "none" }}>
+  <Button buttonVariant="primary" buttonType="outlinedBG">
+    Join Us
+  </Button>
           </a>
         </div>
       </HeroContainerTwo>
