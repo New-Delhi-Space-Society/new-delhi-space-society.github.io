@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { MemberData } from "../../pages/api/members";
 import { device } from "../../ThemeConfig";
 import { KH3, KSmall } from "../Typography";
-import { NextPage } from "next";
+import Layout from "../Layout";
 
 interface iProps {
-  member: MemberData;
+  members: MemberData[];
 }
 
 const MemberCardContainer = styled.div`
@@ -55,7 +55,7 @@ const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
   );
 };
 
-const MembersPage: NextPage<{ members: MemberData[] }> = ({ members }) => {
+const MembersPage: React.FunctionComponent<iProps> = ({ members }) => {
   return (
     <Layout>
       <MembersContainer>
