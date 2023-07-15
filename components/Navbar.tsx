@@ -2,7 +2,6 @@ import AppContainer from "./AppContainer";
 import Link from "next/link";
 import styled from "styled-components";
 import { device } from "../ThemeConfig";
-import Button from "./Button";
 import { KNavbarText } from "./Typography";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,6 +33,10 @@ const navLinks: NavbarLink[] = [
     to: "/contact",
     text: "Contact Us",
   },
+  {
+    to: "https://forms.gle/xwbRGFx9fGyASD5B9",
+    text: "Join Us",
+  }
 ];
 
 const NavbarContainer = styled(AppContainer)`
@@ -104,21 +107,15 @@ export default function Navbar() {
         >
           {navLinks.map((item, index) => (
             <Link href={item.to} key={index}>
-              <NavLink>{item.text}</NavLink>
+              {item.to.startsWith("http") ? (
+                <a target="_blank" rel="noreferrer">
+                  <NavLink>{item.text}</NavLink>
+                </a>
+              ) : (
+                <NavLink>{item.text}</NavLink>
+              )}
             </Link>
           ))}
-          <NavLink>
-            <a
-              href="https://forms.gle/xwbRGFx9fGyASD5B9"
-              target="_blank"
-              rel="noreferrer"
-              style={{ cursor: "pointer" }}
-            >
-              <Button buttonVariant="secondary" buttonType="normal">
-                Join Us
-              </Button>
-            </a>
-          </NavLink>
           <div onClick={() => setMenuOpen(!isMenuOpen)} className="hamburger">
             <FontAwesomeIcon icon={faBars} size="xs" />
           </div>
@@ -134,17 +131,18 @@ export default function Navbar() {
           }}
         >
           {navLinks.map((item, index) => (
-            <MobileNavbarLinkDiv>
-              <Link href={item.to} key={index}>
-                <KNavbarText>{item.text}</KNavbarText>
+            <MobileNavbarLinkDiv key={index}>
+              <Link href={item.to}>
+                {item.to.startsWith("http") ? (
+                  <a target="_blank" rel="noreferrer">
+                    <KNavbarText>{item.text}</KNavbarText>
+                  </a>
+                ) : (
+                  <KNavbarText>{item.text}</KNavbarText>
+                )}
               </Link>
             </MobileNavbarLinkDiv>
           ))}
-          <MobileNavbarLinkDiv>
-            <Button buttonVariant="secondary" buttonType="normal">
-              Join Us
-            </Button>
-          </MobileNavbarLinkDiv>
         </div>
       )}
     </nav>
