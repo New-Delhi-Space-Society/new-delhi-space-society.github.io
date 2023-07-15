@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { lightTheme } from "../ThemeConfig";
+import React, { useEffect } from "react";
 
 export const KH1 = styled.h1`
   font-size: 48px;
@@ -54,10 +55,6 @@ export const KButtonText = styled.span`
   font-size: 16px;
   letter-spacing: 3%;
   text-transform: uppercase;
-
-  &::after {
-    content: none;
-  }
 `;
 
 export const KNavbarText = styled.p`
@@ -68,3 +65,18 @@ export const KNavbarText = styled.p`
 export const KContentHeadings = styled(KH2)`
   color: ${lightTheme.colors.secondaryMain};
 `;
+
+const removeUnderline = () => {
+  const button = document.querySelector(".button-class");
+  if (button) {
+    button.style.textDecoration = "none";
+  }
+};
+
+const Button = () => {
+  useEffect(() => {
+    removeUnderline();
+  }, []);
+
+  return <button className="button-class">Join Us</button>;
+};
