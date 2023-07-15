@@ -29,21 +29,12 @@ const StyledButton = styled.button<iButtonProps>`
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  text-decoration: none; // Add this line to remove underline
 
   &:hover {
     cursor: pointer;
     background-color: #3c6e8f; // Change this line
   }
-`;
-
-const KButtonText = styled.span`
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  text-align: center;
-  border-bottom: none; 
 `;
 
 const Button: React.FunctionComponent<
