@@ -11,7 +11,7 @@ export const KH1 = styled.h1`
 
 export const KH2 = styled.h2`
   font-family: "Poppins", sans-serif;
-  font-size: 52px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
