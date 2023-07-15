@@ -10,7 +10,7 @@ interface iProps {
 const MemberCardContainer = styled.div`
   text-align: center;
   box-shadow: 0px 8px 24px 16px rgba(112, 144, 176, 0.1);
-  border-radius: 24px;
+  border-radius: 0;
   width: 232.064px;
   height: 334.262px;
   flex-shrink: 0;
@@ -18,13 +18,8 @@ const MemberCardContainer = styled.div`
 `;
 
 const MemberImage = styled.img`
-  width: 166px;
+  width: 232.064px;
   height: 166px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, -50%);
 `;
 
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
