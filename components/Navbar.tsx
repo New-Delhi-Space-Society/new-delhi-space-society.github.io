@@ -66,7 +66,7 @@ const NavLink = styled(KNavbarText)`
   font-family: "Roboto Flex", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 515;
+  font-weight: 550;
   line-height: 140%;
 
   &:hover {
@@ -108,7 +108,7 @@ export default function Navbar() {
           {navLinks.map((item, index) => (
             <Link href={item.to} key={index}>
               {item.to.startsWith("http") ? (
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
                   <NavLink>{item.text}</NavLink>
                 </a>
               ) : (
@@ -134,7 +134,7 @@ export default function Navbar() {
             <MobileNavbarLinkDiv key={index}>
               <Link href={item.to}>
                 {item.to.startsWith("http") ? (
-                  <a target="_blank" rel="noreferrer">
+                  <a target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
                     <KNavbarText>{item.text}</KNavbarText>
                   </a>
                 ) : (
