@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { MemberData } from "../../pages/api/members";
 import { device } from "../../ThemeConfig";
 import { KH3, KSmall } from "../Typography";
+import { NextPage } from "next";
 
 interface iProps {
   member: MemberData;
