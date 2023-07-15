@@ -48,23 +48,11 @@ const MembersContainer = styled.div`
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
   return (
     <MemberCardContainer>
-      <MemberImage src={`members/${member.image}`} alt={`${member.name} Image`} />
+      <MemberImage src={member.photo} alt={member.name} />
       <MemberName>{member.name}</MemberName>
       <MemberRole>{member.role}</MemberRole>
     </MemberCardContainer>
   );
 };
 
-const MembersPage: React.FunctionComponent<iProps> = ({ members }) => {
-  return (
-    <Layout>
-      <MembersContainer>
-        {members.map((member) => (
-          <MemberCard key={member.id} member={member} />
-        ))}
-      </MembersContainer>
-    </Layout>
-  );
-};
-
-export default MembersPage;
+export default MemberCard;
