@@ -23,7 +23,7 @@ export const lightTheme: DefaultTheme = {
   colors: {
     body: "#ffffff",
     text: "#000000",
-    primaryMain: "#1C1436",
+    primaryMain: "#464D65",
     primaryHover: "#2C2055",
     bannercolor: "#081a26",
     bannercolor2: "#5b4257",
