@@ -7,7 +7,7 @@ interface SubHeadingContentsProps {
 const SubHeadingContents: React.FC<SubHeadingContentsProps> = ({ title, children }) => {
   return (
     <div className="content">
-      <KH2 style={{ margin: "32px 0 8px 0", color: "#6E55C0" }}>
+      <KH2 style={{ margin: "32px 0 8px 0", color: "#464D65" }}>
         {title}
       </KH2>
       <KBody>{children}</KBody>
