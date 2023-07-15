@@ -61,9 +61,9 @@ const NavLink = styled(KNavbarText)`
   display: none;
   color: var(--primary-main, #1C1436);
   font-family: "Roboto Flex", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 140%;
 
   &:hover {
