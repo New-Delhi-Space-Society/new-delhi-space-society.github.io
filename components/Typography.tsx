@@ -34,7 +34,7 @@ export const KSubtitle = styled.p`
 export const KBody = styled.p`
   font-size: 16px;
   line-height: 140%;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Roboto Flex";
 `;
 
 export const KStrong = styled.strong`
