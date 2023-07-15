@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { MemberData } from "../../pages/api/members";
+import { device } from "../../ThemeConfig";
+import { KH3, KSmall } from "../Typography";
 
 interface iProps {
   member: MemberData;
