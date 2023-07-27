@@ -1,26 +1,38 @@
+import React from "react";
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
 import { nssUrl } from "../../config";
 import { KBody } from "../Typography";
 
 export default function Contents() {
+  const introductionContent = (
+    <>
+      With the aim of advancing space science and aerospace engineering, we are a passionate group of space enthusiasts who founded the New Delhi Space Society, a distinguished chapter of the{" "}
+      <a href={nssUrl} target="_blank" rel="noopener noreferrer">
+        National Space Society
+      </a>
+      . Our mission is to conduct cutting-edge research and explore the wonders of space. However, our pursuits go beyond research; we actively engage in outreach programs, participate in competitions, and host various activities to fulfill our objectives and promote space awareness. As our group of aerospace aficionados continues to grow, we warmly welcome your support! Discover more about us in the About Us section and join us in our journey of exploration and discovery!
+    </>
+  );
+
+  const awardsContent = (
+    <>
+      The New Delhi Space Society has been recognized with prestigious awards:
+      <ul>
+        <li>Best New Chapter Award (2019)</li>
+        <li>Honorable Mention Award (2022)</li>
+      </ul>
+      Additionally, our society has garnered media attention and was featured in reputable newspapers such as Hindustan Times.
+    </>
+  );
+
   return (
     <AppContainer>
       <SubHeadingContents title="Introduction">
-        <KBody>
-          With a goal of making advancements in space science and aerospace engineering, we are a group of space enthusiasts who formed the New Delhi Space Society, a chapter of the{" "}
-          <a href={nssUrl} target="_blank" rel="noopener noreferrer">
-            National Space Society
-          </a>
-          . We conduct research and explore the nuances of space, but we are not limited to that. We also engage in outreach programs, participate in competitions, and various other activities to achieve our goals and spread awareness about space. We are a growing group of aerospace aficionados and actively seek your support! Learn more in the About Us section and volunteer your efforts!
-        </KBody>
+        <KBody>{introductionContent}</KBody>
       </SubHeadingContents>
       <SubHeadingContents title="Features & Awards">
-        <KBody>
-          The New Delhi Space Society has been awarded the 
-          Best New Chapter Award in 2019 & the Honorable Mention Award in 2022.
-          New Delhi Space Society has been also featured in newspapers like Hindustan Times.
-        </KBody>
+        <KBody>{awardsContent}</KBody>
       </SubHeadingContents>
     </AppContainer>
   );
