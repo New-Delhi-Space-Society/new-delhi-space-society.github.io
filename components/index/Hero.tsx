@@ -25,8 +25,6 @@ const HeroContainerTwo = styled(AppContainer)`
   align-items: left;
   text-align: left;
 
-  text-align: center;
-
   @media ${device.lg} {
     flex-direction: row;
     text-align: left;
@@ -34,6 +32,7 @@ const HeroContainerTwo = styled(AppContainer)`
 
   * {
     margin: 8px 0;
+    text-align: left; /* Ensure all text inside this container is left-aligned */
   }
 `;
 
@@ -45,7 +44,7 @@ const ColoredText = styled.div`
 
 const JoinUsLink = styled.a`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Align the button to the left */
   text-decoration: none;
 `;
 
