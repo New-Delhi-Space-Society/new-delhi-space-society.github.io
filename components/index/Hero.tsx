@@ -32,7 +32,6 @@ const HeroContainerTwo = styled(AppContainer)`
 
   * {
     margin: 8px 0;
-    text-align: left; /* Ensure all text inside this container is left-aligned */
   }
 `;
 
@@ -40,6 +39,7 @@ const ColoredText = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   padding: 4px 8px;
   display: inline-block;
+  text-align: left; /* Ensure the text inside this component is left-aligned */
 `;
 
 const JoinUsLink = styled.a`
