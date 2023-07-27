@@ -15,17 +15,15 @@ export default function Contents() {
           . We conduct research and explore the nuances of space, but we are not limited to that. We also engage in outreach programs, participate in competitions, and various other activities to achieve our goals and spread awareness about space. We are a growing group of aerospace aficionados and actively seek your support! Learn more in the About Us section and volunteer your efforts!
         </KBody>
       </SubHeadingContents>
-      <SubHeadingContents title="Awards">
+      <SubHeadingContents title="Features & Awards">
         <KBody>
           The New Delhi Space Society has been awarded the following:
           <ul>
             <li>Best New Chapter Award (2019)</li>
             <li>Honorable Mention Award (2022)</li>
           </ul>
+         New Delhi Space Society has been featured in newspapers like Hindustan Times.
         </KBody>
-      </SubHeadingContents>
-      <SubHeadingContents title="Newspaper Features">
-        <KBody>New Delhi Space Society has been featured in newspapers like Hindustan Times.</KBody>
       </SubHeadingContents>
     </AppContainer>
   );
