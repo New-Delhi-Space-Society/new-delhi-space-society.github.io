@@ -21,13 +21,11 @@ const HeroContainerTwo = styled(AppContainer)`
 
   flex-direction: column-reverse;
   display: flex;
-  justify-content: space-evenly;
-  align-items: left;
-  text-align: left;
+  align-items: flex-start; /* Align items to the left */
+  text-align: left; /* Align text to the left */
 
   @media ${device.lg} {
     flex-direction: row;
-    text-align: left;
   }
 
   * {
