@@ -5,9 +5,8 @@ import Button from "../Button";
 import { KH1, KSubtitle } from "../Typography";
 import { nssUrl } from "../../config";
 
-
 const HeroContainer = styled.div`
-  background-image: url('https://media.discordapp.net/attachments/1133845612769591439/1134221180644102224/earth-1756274_1280.png?width=1220&height=610');
+  background-image: url('bannerpic.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -20,50 +19,44 @@ const HeroContainerTwo = styled(AppContainer)`
   margin-bottom: 8px;
   height: 100%;
 
+  flex-direction: column-reverse;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: center;
 
   @media ${device.lg} {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
+    text-align: left;
   }
 
   * {
     margin: 8px 0;
   }
-
-  .text {
-    font-family: Poppins;
-    text-align: left;
-    align-self: start;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-};
+`;
 
 const ColoredText = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
   display: inline-block;
 `;
 
-const Title = styled(KH1)`
-`;
-
-const Tagline = styled(KSubtitle)`
+const JoinUsLink = styled.a`
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 `;
 
 function Hero() {
-  const formLink = "https://forms.gle/xwbRGFx9fGyASD5B9";
-
   return (
     <HeroContainer>
       <HeroContainerTwo>
         <div className="text">
           <ColoredText>
-            <Title style={{ fontFamily: "Poppins" }}>New Delhi Space Society</Title>
+            <KH1>New Delhi Space Society</KH1>
           </ColoredText>
-          <Tagline>
+          <KSubtitle>
             <ColoredText>
               An Award Winning Chapter of the{" "}
               <a
@@ -74,14 +67,21 @@ function Hero() {
                 National Space Society
               </a>
             </ColoredText>
-          </Tagline>
-          <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer", textDecoration: "none" }}>
+          </KSubtitle>
+          <JoinUsLink
+            href="https://forms.gle/xwbRGFx9fGyASD5B9"
+            target="_blank"
+            rel="noreferrer"
+            style={{ cursor: "pointer" }}
+          >
             <Button buttonVariant="primary" buttonType="outlinedBG">
               Join Us
             </Button>
-          </a>
+          </JoinUsLink>
         </div>
       </HeroContainerTwo>
     </HeroContainer>
   );
 }
+
+export default Hero;
