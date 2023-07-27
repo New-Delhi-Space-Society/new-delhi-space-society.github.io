@@ -22,7 +22,11 @@ export default function Contents() {
         <li>Best New Chapter Award (2019)</li>
         <li>Honorable Mention Award (2022)</li>
       </ul>
-      Additionally, our society has garnered media attention and was featured in reputable newspapers such as Hindustan Times.
+      Additionally, our society has garnered media attention and was featured in reputable newspapers such as{" "}
+      <a href="https://www.hindustantimes.com/cities/delhi-news/asteroid-day-young-space-enthusiasts-shine-bright-in-delhi-s-skylight-101656603645351.html" target="_blank" rel="noopener noreferrer">
+        Hindustan Times
+      </a>
+      .
     </>
   );
 
