@@ -17,12 +17,9 @@ export default function Contents() {
       </SubHeadingContents>
       <SubHeadingContents title="Features & Awards">
         <KBody>
-          The New Delhi Space Society has been awarded the following:
-          <ul>
-            <li>Best New Chapter Award (2019)</li>
-            <li>Honorable Mention Award (2022)</li>
-          </ul>
-         New Delhi Space Society has been featured in newspapers like Hindustan Times.
+          The New Delhi Space Society has been awarded the 
+          Best New Chapter Award in 2019 & the Honorable Mention Award in 2022.
+          New Delhi Space Society has been also featured in newspapers like Hindustan Times.
         </KBody>
       </SubHeadingContents>
     </AppContainer>
