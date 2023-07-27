@@ -5,6 +5,7 @@ import Button from "../Button";
 import { KH1, KSubtitle } from "../Typography";
 import { nssUrl } from "../../config";
 
+
 const HeroContainer = styled.div`
   background-image: url('https://media.discordapp.net/attachments/1133845612769591439/1134221180644102224/earth-1756274_1280.png?width=1220&height=610');
   background-size: cover;
@@ -38,8 +39,9 @@ const HeroContainerTwo = styled(AppContainer)`
     font-family: Poppins;
     text-align: left;
     align-self: start;
+    background-color: rgba(0, 0, 0, 0.5);
   }
-`;
+};
 
 const ColoredText = styled.div`
   display: inline-block;
@@ -74,14 +76,12 @@ function Hero() {
             </ColoredText>
           </Tagline>
           <a href={formLink} target="_blank" rel="noreferrer" style={{ cursor: "pointer", textDecoration: "none" }}>
-  <Button buttonVariant="primary" buttonType="outlinedBG">
-    Join Us
-  </Button>
+            <Button buttonVariant="primary" buttonType="outlinedBG">
+              Join Us
+            </Button>
           </a>
         </div>
       </HeroContainerTwo>
     </HeroContainer>
   );
 }
-
-export default Hero;
