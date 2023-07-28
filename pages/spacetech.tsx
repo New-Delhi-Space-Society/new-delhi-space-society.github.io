@@ -12,7 +12,6 @@ const Slideshow = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
     }, 5000);
@@ -32,16 +31,26 @@ const Slideshow = () => {
 
   return (
     <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
-    <img
-      src={imageUrls[currentImageIndex]}
-      alt={`Slideshow ${currentImageIndex}`}
-      style={{ maxWidth: "100%", height: "auto" }}
-    />
-    <div>
-      <button onClick={goToPrevImage}>Previous</button>
-      <button onClick={goToNextImage}>Next</button>
+      <img
+        src={imageUrls[currentImageIndex]}
+        alt={`Slideshow ${currentImageIndex}`}
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
+      <div style={{ marginTop: "10px" }}>
+        <button
+          onClick={goToPrevImage}
+          style={buttonStyles}
+        >
+          Previous
+        </button>
+        <button
+          onClick={goToNextImage}
+          style={{ ...buttonStyles, marginLeft: "10px" }}
+        >
+          Next
+        </button>
+      </div>
     </div>
-  </div>
   );
 };
 
@@ -55,3 +64,16 @@ const About = () => {
 };
 
 export default About;
+
+const buttonStyles = {
+  padding: "10px 20px",
+  fontSize: "16px",
+  borderRadius: "5px",
+  backgroundColor: "#007bff",
+  color: "#ffffff",
+  border: "none",
+  cursor: "pointer",
+  outline: "none",
+  boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
+  transition: "background-color 0.2s ease",
+};
