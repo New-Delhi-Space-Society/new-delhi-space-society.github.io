@@ -8,12 +8,11 @@ const HistoryContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; /* Change "center" to "flex-start" */
+  text-align: left; /* Change "center" to "left" */
 
   @media ${device.lg} {
     flex-direction: row;
-    text-align: left;
   }
 `;
 
@@ -21,12 +20,11 @@ const PrincipalsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; /* Change "center" to "flex-start" */
+  text-align: left; /* Change "center" to "left" */
 
   @media ${device.lg} {
     display: block;
-    text-align: left;
   }
 `;
 
@@ -43,7 +41,7 @@ export default function SpacetechContents() {
               Fusce eu nisi nec nisl feugiat faucibus eget sit amet sapien. Vestibulum ullamcorper sem non neque consequat bibendum. Nulla bibendum, ex vel pharetra sagittis, neque odio varius tellus, vel accumsan nulla mauris et purus. Cras tincidunt felis nec mauris hendrerit, eu venenatis mi faucibus.
             </p>
           </div>
-          <Slideshow /> {/* Place the Slideshow component here */}
+          <Slideshow /> 
         </HistoryContainer>
       </SubHeadingContents>
       <SubHeadingContents title="What principals do we follow?">
