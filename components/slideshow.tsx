@@ -29,7 +29,7 @@ const Slideshow = () => {
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center", padding:"20px" }}>
+    <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center"}}>
       <img
         src={imageUrls[currentImageIndex]}
         alt={`Slideshow ${currentImageIndex}`}
