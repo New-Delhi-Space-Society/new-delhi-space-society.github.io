@@ -36,7 +36,12 @@ export default function SpacetechContents() {
       <SubHeadingContents title="What is Spacetech?">
         <HistoryContainer>
           <div className="content" style={{ marginRight: "4px" }}>
-            {/* Your content for "What is Spacetech?" */}
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed eleifend elit, at sollicitudin tortor. Mauris a mauris felis. Sed congue ultrices nisi, eu dignissim turpis pellentesque quis. Ut id consectetur nulla, non rhoncus dui. Vivamus quis enim eget arcu scelerisque sodales.
+            </p>
+            <p>
+              Fusce eu nisi nec nisl feugiat faucibus eget sit amet sapien. Vestibulum ullamcorper sem non neque consequat bibendum. Nulla bibendum, ex vel pharetra sagittis, neque odio varius tellus, vel accumsan nulla mauris et purus. Cras tincidunt felis nec mauris hendrerit, eu venenatis mi faucibus.
+            </p>
           </div>
           <Slideshow /> {/* Place the Slideshow component here */}
         </HistoryContainer>
@@ -44,7 +49,12 @@ export default function SpacetechContents() {
       <SubHeadingContents title="What principals do we follow?">
         <PrincipalsContainer>
           <div className="content">
-            {/* Your content for "What principals do we follow?" */}
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed eleifend elit, at sollicitudin tortor. Mauris a mauris felis. Sed congue ultrices nisi, eu dignissim turpis pellentesque quis. Ut id consectetur nulla, non rhoncus dui. Vivamus quis enim eget arcu scelerisque sodales.
+            </p>
+            <p>
+              Fusce eu nisi nec nisl feugiat faucibus eget sit amet sapien. Vestibulum ullamcorper sem non neque consequat bibendum. Nulla bibendum, ex vel pharetra sagittis, neque odio varius tellus, vel accumsan nulla mauris et purus. Cras tincidunt felis nec mauris hendrerit, eu venenatis mi faucibus.
+            </p>
           </div>
         </PrincipalsContainer>
       </SubHeadingContents>
