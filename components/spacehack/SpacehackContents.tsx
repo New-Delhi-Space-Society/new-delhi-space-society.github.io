@@ -50,7 +50,6 @@ export default function SpacehackContents() {
           
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sodales neque, in vehicula erat. Integer eleifend ut felis sed dapibus. Vestibulum non leo libero. Curabitur sed leo eleifend leo ullamcorper volutpat quis at nisl. Sed quis felis fringilla, malesuada massa eget, viverra sem. Etiam lacinia aliquet lorem eget condimentum. Sed in neque sed urna condimentum blandit. Vestibulum vitae finibus lacus. Sed eleifend diam turpis, non consectetur arcu suscipit sed. In dictum massa at magna vehicula, ac varius velit tempor.
           </div>
           <LogoImage src={"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/placeholder.png"} alt="Vector Graphic" />
         </HistoryContainer>
