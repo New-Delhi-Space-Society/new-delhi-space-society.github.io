@@ -29,11 +29,11 @@ const Slideshow = () => {
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center"}}>
+    <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center"}}>
       <img
         src={imageUrls[currentImageIndex]}
         alt={`Slideshow ${currentImageIndex}`}
-        style={{ maxWidth: "100%", height: "auto" }}
+        style={{ width: "100%", height: "auto" }}
       />
       <div style={{ marginTop: "10px" }}>
         <button onClick={goToPrevImage} style={buttonStyles}>
