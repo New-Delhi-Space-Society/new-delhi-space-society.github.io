@@ -42,7 +42,7 @@ export const members = [
         role: "Member",
         image: "shireen.png",
       },
-       {
+      {
         name: "Kavin Valli",
         role: "Chapter Officer",
         image: "kavin.jpeg",
@@ -60,6 +60,56 @@ export const members = [
       {
         name: "Shrey Madaan",
         role: "Member",
+        image: "dummy.png",
+      },
+    ],
+  },
+  {
+    type: "Interns",
+    members: [
+      {
+        name: "Nisarga Adhikary",
+        role: "Intern",
+        image: "https://i.pinimg.com/564x/2e/37/b0/2e37b020ff52f78147b15eed5b010364.jpg",
+      },
+      {
+        name: "Jai Ansh Singh Bindra",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Adarsh Kumar",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Manvik",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Aditya Shankar",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Anav Shah",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Aryaman",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Madhaavan",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Shreyansh Dash",
+        role: "Intern",
         image: "dummy.png",
       },
     ],
