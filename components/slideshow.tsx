@@ -29,12 +29,12 @@ const Slideshow = () => {
   };
 
   return (
-    <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center"}}>
-      <img
-        src={imageUrls[currentImageIndex]}
-        alt={`Slideshow ${currentImageIndex}`}
-        style={{ width: "100%", height: "auto" }}
-      />
+    <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
+    <img
+      src={imageUrls[currentImageIndex]}
+      alt={`Slideshow ${currentImageIndex}`}
+      style={{ width: "100%", maxHeight: "600px", objectFit: "cover" }}
+    />
       <div style={{ marginTop: "10px" }}>
         <button onClick={goToPrevImage} style={buttonStyles}>
           Previous
