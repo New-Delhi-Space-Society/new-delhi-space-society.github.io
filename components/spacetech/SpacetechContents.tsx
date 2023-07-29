@@ -44,7 +44,7 @@ export default function SpacetechContents() {
           <Slideshow /> 
         </HistoryContainer>
       </SubHeadingContents>
-      <SubHeadingContents title="What principals do we follow?">
+      <SubHeadingContents title="What principles do we follow?">
         <PrincipalsContainer>
           <div className="content">
             <p>

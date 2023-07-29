@@ -65,7 +65,7 @@ export default function AboutContents() {
           <LogoImage src={"logo-1.png"} alt="Vector Graphic" />
         </HistoryContainer>
       </SubHeadingContents>
-      <SubHeadingContents title="What principals do we follow?">
+      <SubHeadingContents title="What principles do we follow?">
         <PrincipalsContainer>
           <img
             style={{ maxWidth: "100%", height: "auto" }}
