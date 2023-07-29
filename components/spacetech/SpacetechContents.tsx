@@ -31,7 +31,7 @@ const PrincipalsContainer = styled.div`
 export default function SpacetechContents() {
   return (
     <AppContainer>
-      <SubHeadingContents title="What is Spacetech?">
+      <SubHeadingContents title="SpaceTech@Exun">
         <HistoryContainer>
           <div className="content" style={{ marginRight: "4px" }}>
             <p>
