@@ -2,7 +2,7 @@ import styled from "styled-components";
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
 import { device } from "../../ThemeConfig";
-import Slideshow from "./Slideshow"; // Import the Slideshow component
+import Slideshow from "../Slideshow"; // Import the Slideshow component
 
 const HistoryContainer = styled.div`
   display: flex;
