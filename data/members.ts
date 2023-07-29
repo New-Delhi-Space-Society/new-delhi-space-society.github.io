@@ -70,7 +70,7 @@ export const members = [
       {
         name: "Nisarga Adhikary",
         role: "Intern",
-        image: "https://i.pinimg.com/564x/2e/37/b0/2e37b020ff52f78147b15eed5b010364.jpg",
+        image: "nisarga.png",
       },
       {
         name: "Jai Ansh Singh Bindra",
