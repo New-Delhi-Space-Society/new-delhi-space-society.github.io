@@ -34,8 +34,8 @@ const Slideshow = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        maxWidth: "200px", 
-        maxHeight: "500px", 
+        maxWidth: "800px", 
+        maxHeight: "800px", 
         margin: "0 auto",
       }}
     >
