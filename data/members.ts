@@ -13,11 +13,6 @@ export const members = [
         image: "rudes.png",
       },
       {
-        name: "Priyanshi Ahuja",
-        role: "Treasurer",
-        image: "priyanshi.jpeg",
-      },
-      {
         name: "Shiv Sethi",
         role: "Board Member",
         image: "shiv.jpeg",
@@ -41,6 +36,11 @@ export const members = [
         name: "Shireen Rajora",
         role: "Member",
         image: "shireen.png",
+      },
+      {
+        name: "Priyanshi Ahuja",
+        role: "Treasurer",
+        image: "priyanshi.jpeg",
       },
       {
         name: "Kavin Valli",
@@ -83,7 +83,7 @@ export const members = [
         image: "dummy.png",
       },
       {
-        name: "Manvik",
+        name: "Manvik Kumar",
         role: "Intern",
         image: "dummy.png",
       },
@@ -98,12 +98,12 @@ export const members = [
         image: "dummy.png",
       },
       {
-        name: "Aryaman",
+        name: "Aryaman Chandra",
         role: "Intern",
         image: "dummy.png",
       },
       {
-        name: "Madhaavan",
+        name: "Madhaavan Gupta",
         role: "Intern",
         image: "dummy.png",
       },

@@ -54,7 +54,7 @@ export default function SpacehackContents() {
           <LogoImage src={"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/placeholder.png"} alt="Vector Graphic" />
         </HistoryContainer>
       </SubHeadingContents>
-      <SubHeadingContents title="What principals do we follow?">
+      <SubHeadingContents title="What principles do we follow?">
         <PrincipalsContainer>
     
           <div className="content">
