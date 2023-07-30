@@ -69,7 +69,7 @@ export default function AboutContents() {
         <PrincipalsContainer>
           <img
             style={{ maxWidth: "100%", height: "auto" }}
-            src={"milky-way.jpeg"}
+            src={"https://media.discordapp.net/attachments/1120484062553976943/1135181450380058675/JWST-Carina-Nebula-Crop-FI.png?width=1160&height=662"}
             alt="Vector Graphic"
           />
           <div className="content">
