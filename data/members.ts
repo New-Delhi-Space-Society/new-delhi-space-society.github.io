@@ -39,7 +39,7 @@ export const members = [
       },
       {
         name: "Priyanshi Ahuja",
-        role: "Treasurer",
+        role: "Member",
         image: "priyanshi.jpeg",
       },
       {
