@@ -33,7 +33,7 @@ const Slideshow = () => {
       <img
         src={imageUrls[currentImageIndex]}
         alt={`Slideshow ${currentImageIndex}`}
-        style={{ width: "100%", maxHeight: "800px", objectFit: "cover" }}
+        style={{ width: "100%", objectFit: "cover" }}
       />
       <div style={{ marginTop: "10px" }}>
         <button onClick={goToPrevImage} style={buttonStyles}>
