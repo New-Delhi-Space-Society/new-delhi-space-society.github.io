@@ -28,15 +28,30 @@ const Slideshow = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
   };
 
+  const buttonStyles = {
+    padding: "12px 24px",
+    fontSize: "18px",
+    borderRadius: "5px",
+    backgroundColor: "#007bff",
+    color: "#ffffff",
+    border: "none",
+    cursor: "pointer",
+    outline: "none",
+    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
+    transition: "background-color 0.2s ease",
+  };
+
   return (
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        maxWidth: "1200px", 
-        maxHeight: "600px", 
+        maxWidth: "1200px",
+        maxHeight: "600px",
         margin: "0 auto",
+        padding: "20px", // Add padding to the outer div
       }}
     >
       <img
@@ -57,19 +72,6 @@ const Slideshow = () => {
       </div>
     </div>
   );
-};
-
-const buttonStyles = {
-  padding: "10px 20px",
-  fontSize: "16px",
-  borderRadius: "5px",
-  backgroundColor: "#007bff",
-  color: "#ffffff",
-  border: "none",
-  cursor: "pointer",
-  outline: "none",
-  boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
-  transition: "background-color 0.2s ease",
 };
 
 export default Slideshow;
