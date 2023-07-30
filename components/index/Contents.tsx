@@ -9,7 +9,7 @@ export default function Contents() {
     <>
       With the aim of advancing space science and aerospace engineering, we are a passionate group of space enthusiasts who founded the New Delhi Space Society, a distinguished chapter of  
       <a href={nssUrl} target="_blank" rel="noopener noreferrer">
-      National Space Society
+        National Space Society
       </a>
       . Our mission is to conduct cutting-edge research and explore the wonders of space. However, our pursuits go beyond research; we actively engage in outreach programs, participate in competitions, and host various activities to fulfill our objectives and promote space awareness. As our group of aerospace aficionados continues to grow, we warmly welcome your support! Discover more about us in the About Us section and join us in our journey of exploration and discovery!
     </>
