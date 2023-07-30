@@ -7,7 +7,7 @@ import { KBody } from "../Typography";
 export default function Contents() {
   const introductionContent = (
     <>
-      With the aim of advancing space science and aerospace engineering, we are a passionate group of space enthusiasts who founded the New Delhi Space Society, a distinguished chapter of  
+      With the aim of advancing space science and aerospace engineering, we are a passionate group of space enthusiasts who founded the New Delhi Space Society, a distinguished chapter of the{" "}   
       <a href={nssUrl} target="_blank" rel="noopener noreferrer">
          
          National Space Society
