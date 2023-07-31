@@ -24,8 +24,8 @@ const Slideshow = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "40%", 
-        height: "40%", 
+        width: "100%", 
+        height: "100%", 
         padding: "20px",
       }}
     >
