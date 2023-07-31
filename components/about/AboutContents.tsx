@@ -68,7 +68,7 @@ export default function AboutContents() {
       <SubHeadingContents title="What principles do we follow?">
         <PrincipalsContainer>
           <img
-            style={{ maxWidth: "50%", height: "auto", float: "right" }} // Adjust the 'maxWidth' value to make it smaller
+            style={{ maxWidth: "30%", height: "auto", float: "left" }} // Adjust the 'maxWidth' value to make it smaller
             src={"https://media.discordapp.net/attachments/1120484062553976943/1135181450380058675/JWST-Carina-Nebula-Crop-FI.png?width=1160&height=662"}
             alt="Vector Graphic"
           />
