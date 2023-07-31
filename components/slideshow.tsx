@@ -26,7 +26,7 @@ const Slideshow = () => {
         alignItems: "center",
         maxWidth: "1200px",
         maxHeight: "600px",
-        margin: "0 auto",
+        margin: "4 auto",
         padding: "20px", // Add padding to the outer div
       }}
     >
