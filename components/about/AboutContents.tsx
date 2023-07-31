@@ -40,6 +40,13 @@ const LogoImage = styled.img`
   }
 `;
 
+const VectorGraphic = styled.img`
+  max-width: 30%;
+  height: auto;
+  float: left;
+  padding-right: 20px; /* Add padding to the right side of the vector graphic */
+`;
+
 export default function AboutContents() {
   return (
     <AppContainer>
@@ -67,9 +74,10 @@ export default function AboutContents() {
       </SubHeadingContents>
       <SubHeadingContents title="What principles do we follow?">
         <PrincipalsContainer>
-          <img
-            style={{ maxWidth: "30%", height: "auto", float: "left" }} // Adjust the 'maxWidth' value to make it smaller
-            src={"https://media.discordapp.net/attachments/1120484062553976943/1135181450380058675/JWST-Carina-Nebula-Crop-FI.png?width=1160&height=662"}
+          <VectorGraphic
+            src={
+              "https://media.discordapp.net/attachments/1120484062553976943/1135181450380058675/JWST-Carina-Nebula-Crop-FI.png?width=1160&height=662"
+            }
             alt="Vector Graphic"
           />
           <div className="content">
