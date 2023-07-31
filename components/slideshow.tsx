@@ -24,10 +24,9 @@ const Slideshow = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        maxWidth: "3000px",
-        maxHeight: "800px",
-        margin: "4 auto",
-        padding: "20px", // Add padding to the outer div
+        width: "40%", 
+        height: "40%", 
+        padding: "20px",
       }}
     >
       <img
