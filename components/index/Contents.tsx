@@ -17,15 +17,15 @@ export default function Contents() {
 
   return (
     <AppContainer>
-      <SubHeadingContents title="Features & Awards">
+      <SubHeadingContents title="Introduction">
         <KBody>{introductionContent}</KBody>
       </SubHeadingContents>
-      <SubHeadingContents title="Badges">
+      <SubHeadingContents title="Features & Awards">
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png" alt="Badge 1" width="100" />
-          <img src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png" alt="Badge 2" width="100" style={{ marginLeft: "20px" }} />
+          <img src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png" alt="Badge 1" width="150" />
+          <img src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png" alt="Badge 2" width="150" style={{ marginLeft: "20px" }} />
           <a href="https://www.hindustantimes.com/cities/delhi-news/asteroid-day-young-space-enthusiasts-shine-bright-in-delhi-s-skylight-101656603645351.html" target="_blank" rel="noopener noreferrer" style={{ marginLeft: "20px" }}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Hindustan_Times_logo.svg" alt="Hindustan Times Logo" width="200" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Hindustan_Times_logo.svg" alt="Hindustan Times Logo" width="300" />
           </a>
         </div>
       </SubHeadingContents>
