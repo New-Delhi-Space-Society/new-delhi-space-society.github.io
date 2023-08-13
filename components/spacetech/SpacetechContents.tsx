@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
 import { device } from "../../ThemeConfig";
-import ImageGrid from "../imagegrid"; 
+import ImageGrid from "../imagerid"; 
 
 const HistoryContainer = styled.div`
   display: flex;
@@ -23,6 +23,7 @@ const PrincipalsContainer = styled.div`
   flex-direction: column;
   align-items: flex-start; /* Change "center" to "flex-start" */
   text-align: left; /* Change "center" to "left" */
+  margin-bottom: 32px
 
   @media ${device.lg} {
     display: block;
