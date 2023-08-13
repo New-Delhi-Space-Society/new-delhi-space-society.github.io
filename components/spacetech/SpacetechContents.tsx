@@ -3,14 +3,14 @@ import styled from "styled-components";
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
 import { device } from "../../ThemeConfig";
-import ImageGrid from "../imagerid"; 
+import ImageGrid from "../imagegrid"; 
 
 const HistoryContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;,
   flex-direction: column-reverse;
-  align-items: flex-start; /* Change "center" to "flex-start" */
-  text-align: left; /* Change "center" to "left" */
+  align-items: flex-start; 
+  text-align: left; 
 
   @media ${device.lg} {
     flex-direction: row;
@@ -21,9 +21,9 @@ const PrincipalsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: flex-start; /* Change "center" to "flex-start" */
-  text-align: left; /* Change "center" to "left" */
-  margin-bottom: 32px
+  align-items: flex-start; 
+  text-align: left;
+  margin-bottom: 32px;
 
   @media ${device.lg} {
     display: block;
