@@ -66,6 +66,18 @@ const SpacetechContents: React.FC = () => {
               Fusce eu nisi nec nisl feugiat faucibus eget sit amet sapien. Vestibulum ullamcorper sem non neque consequat bibendum. Nulla bibendum, ex vel pharetra sagittis, neque odio varius tellus, vel accumsan nulla mauris et purus. Cras tincidunt felis nec mauris hendrerit, eu venenatis mi faucibus.
             </p>
             
+            <p> ⠀
+            ⠀
+            ⠀
+⠀
+⠀
+⠀
+⠀
+⠀
+⠀
+⠀
+⠀
+</p>
           </div>
           <ImageGrid images={imageUrls} />
         </PrincipalsContainer>
