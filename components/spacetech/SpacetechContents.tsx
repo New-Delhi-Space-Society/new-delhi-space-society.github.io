@@ -18,17 +18,22 @@ const HistoryContainer = styled.div`
 `;
 
 const PrincipalsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-start; 
-  text-align: left;
-  margin-bottom: 32px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+margin-bottom: 32px;
 
-  @media ${device.lg} {
-    display: block;
-  }
+@media ${device.lg} {
+  display: block;
+}
+
+.content {
+  margin-bottom: 16px; /* Add margin between content and image grid */
+}
 `;
+
 
 const imageUrls = [
   "https://media.discordapp.net/attachments/1120484062553976943/1134490158884991118/AIL4fc84zNlhYmx4YDDxV-LFjvi1BpAR616kTToJSuHq2GEkEoWG4yctuK4D-9nUikU5WtX_EuzA_Q-3GeDDq6u-WUz0YEX5kQ1j5JLs1hoB16wYyaFMBn6V8sZNCKr5l5H5b4S0muwD5KbamWIJ14EKGc1Lgww1024-h683-s-no.png?width=993&height=662",
