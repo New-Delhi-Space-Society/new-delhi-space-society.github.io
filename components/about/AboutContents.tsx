@@ -44,7 +44,7 @@ const LogoImage = styled.img`
 `;
 
 const VectorGraphic = styled.img`
-  max-width: 70%; 
+  max-width: 35%; 
   height: auto;
   padding-right: 20px; 
 `;
