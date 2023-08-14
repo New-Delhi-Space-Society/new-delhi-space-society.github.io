@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
@@ -9,6 +10,7 @@ const HistoryContainer = styled.div`
   flex-direction: column-reverse;
   align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 
   @media ${device.lg} {
     flex-direction: row;
@@ -22,6 +24,7 @@ const PrincipalsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 
   @media ${device.lg} {
     display: block;
@@ -44,7 +47,7 @@ const VectorGraphic = styled.img`
   max-width: 30%;
   height: auto;
   float: left;
-  padding-right: 20px; /* Add padding to the right side of the vector graphic */
+  padding-right: 20px; 
 `;
 
 export default function AboutContents() {
