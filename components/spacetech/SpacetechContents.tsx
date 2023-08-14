@@ -39,6 +39,7 @@ const firstRowImages = [
   "https://media.discordapp.net/attachments/1140692334653214913/1140693385120845884/Screenshot_2023-08-14_at_4.14.42_PM.png?width=1170&height=662",
   "https://media.discordapp.net/attachments/1140692334653214913/1140693488959242301/Screenshot_2023-08-14_at_5.15.05_PM.png?width=1222&height=662",
   "https://media.discordapp.net/attachments/1140692334653214913/1140693489529651250/Screenshot_2023-08-14_at_6.20.20_PM.png?width=1165&height=662",
+  "https://cdn.discordapp.com/attachments/1120484062553976943/1140771978563813396/Screenshot_2023-08-14_at_6.28.12_PM.png",
 ];
 
 const secondRowImages = [
