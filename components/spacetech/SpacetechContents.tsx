@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AppContainer from "../AppContainer";
 import SubHeadingContents from "../SubHeadingContents";
 import { device } from "../../ThemeConfig";
-import ImageGrid from "../imagegrid"; 
+import ImageGrid from "../imagegrid";
 
 const HistoryContainer = styled.div`
   display: flex;
@@ -34,6 +34,18 @@ const PrincipalsContainer = styled.div`
   }
 `;
 
+const imagesRowContainer = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  flexWrap: "wrap",
+};
+
+const imagesStyle = {
+  width: "calc(20% - 10px)", 
+  marginBottom: "10px",
+};
+
 const firstRowImages = [
   "https://media.discordapp.net/attachments/1140692334653214913/1140693384504299610/Screenshot_2023-08-14_at_4.13.49_PM.png?width=1181&height=662",
   "https://media.discordapp.net/attachments/1140692334653214913/1140693385120845884/Screenshot_2023-08-14_at_4.14.42_PM.png?width=1170&height=662",
@@ -49,6 +61,7 @@ const secondRowImages = [
   "https://cdn.discordapp.com/attachments/1140692334653214913/1140693490766987415/Screenshot_2023-08-14_at_5.11.31_PM.png",
   "https://media.discordapp.net/attachments/1140692334653214913/1140752611226693662/Copy_of_Neospace_CORE_DPSDW_Team_One_Spacetech_Finals_-_Partha_Khurana_page-0001_1.jpg?width=468&height=662",
 ];
+
 const SpacetechContents: React.FC = () => {
   return (
     <AppContainer>
@@ -73,10 +86,27 @@ const SpacetechContents: React.FC = () => {
             <p>
               Fusce eu nisi nec nisl feugiat faucibus eget sit amet sapien. Vestibulum ullamcorper sem non neque consequat bibendum. Nulla bibendum, ex vel pharetra sagittis, neque odio varius tellus, vel accumsan nulla mauris et purus. Cras tincidunt felis nec mauris hendrerit, eu venenatis mi faucibus.
             </p>
-            
           </div>
-          <ImageGrid images={firstRowImages} />
-          <ImageGrid images={secondRowImages} />
+          <div style={imagesRowContainer}>
+            {firstRowImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Image ${index + 1}`}
+                style={imagesStyle}
+              />
+            ))}
+          </div>
+          <div style={imagesRowContainer}>
+            {secondRowImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Image ${index + 1}`}
+                style={imagesStyle}
+              />
+            ))}
+          </div>
         </PrincipalsContainer>
       </SubHeadingContents>
     </AppContainer>
