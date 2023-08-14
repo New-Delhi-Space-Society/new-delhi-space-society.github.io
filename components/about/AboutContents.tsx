@@ -44,10 +44,11 @@ const LogoImage = styled.img`
 `;
 
 const VectorGraphic = styled.img`
-  max-width: 100%; 
+  max-width: 70%; 
   height: auto;
   padding-right: 20px; 
 `;
+
 
 export default function AboutContents() {
   return (
