@@ -67,8 +67,10 @@ const SpacetechContents: React.FC = () => {
           <div className="content">
       <p>  </p>
           </div>
+          <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "16px" }}>
           <ImageGrid images={firstRowImages} />
           <ImageGrid images={secondRowImages} />
+          </div>
         </PrincipalsContainer>
       </SubHeadingContents>
     </AppContainer>
