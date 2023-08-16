@@ -55,7 +55,7 @@ export default function SpacehackContents() {
 
             Will your crew reach the stars, burn up in the atmosphere, and go out with a boom as all your skills are tested, including innovation, design, marketing, and pitching? Sign up at <a href="https://unstop.com/p/spacehack-esya23-indraprastha-institute-of-information-technology-iiit-delhi-728723">Unstop</a>, don your suits, check all safety systems, and prepare for lift-off on the 25th of August 2023 at IIIT Delhi!
           </ContentText>
-          <LogoImage src={"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/placeholder.png"} alt="Vector Graphic" />
+          <LogoImage src={"https://media.discordapp.net/attachments/1120484062553976943/1141337384252866640/SpaceHack1.png?width=662&height=662"} alt="Vector Graphic" />
         </HistoryContainer>
       </SubHeadingContents>
     </AppContainer>
