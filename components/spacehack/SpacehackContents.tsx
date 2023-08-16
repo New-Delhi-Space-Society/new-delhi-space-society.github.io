@@ -51,10 +51,11 @@ export default function SpacehackContents() {
       <SubHeadingContents title="SpaceHack@ESYA">
         <HistoryContainer>
           <ContentText style={{ marginRight: "4px" }}>
-            SpaceHack@ESYA 2023 is a fast-paced aerospace-focused startup pitch competition, that puts you into the suits of the heads of startups, competing to develop your product, bring it to market, and grow the company as if the sky is not the limit.
+           <p> SpaceHack@ESYA 2023 is a fast-paced aerospace-focused startup pitch competition, that puts you into the suits of the heads of startups, competing to develop your product, bring it to market, and grow the company as if the sky is not the limit.
 
             Will your crew reach the stars, burn up in the atmosphere, and go out with a boom as all your skills are tested, including innovation, design, marketing, and pitching? 
             
+            </p>
             <p>Sign up at <a href="https://unstop.com/p/spacehack-esya23-indraprastha-institute-of-information-technology-iiit-delhi-728723">Unstop</a>, don your suits, check all safety systems, and prepare for lift-off on the 25th of August 2023 at IIIT Delhi!
           </p>
           </ContentText>
