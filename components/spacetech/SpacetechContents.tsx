@@ -65,13 +65,7 @@ const SpacetechContents: React.FC = () => {
       <SubHeadingContents title="Past Competitions (2018-2022)">
         <PrincipalsContainer>
           <div className="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed eleifend elit, at sollicitudin tortor. Mauris a mauris felis. Sed congue ultrices nisi, eu dignissim turpis pellentesque quis. Ut id consectetur nulla, non rhoncus dui. Vivamus quis enim eget arcu scelerisque sodales.
-            </p>
-            <p>
-              Fusce eu nisi nec nisl feugiat faucibus eget sit amet sapien. Vestibulum ullamcorper sem non neque consequat bibendum. Nulla bibendum, ex vel pharetra sagittis, neque odio varius tellus, vel accumsan nulla mauris et purus. Cras tincidunt felis nec mauris hendrerit, eu venenatis mi faucibus.
-            </p>
-            
+      <p>  </p>
           </div>
           <ImageGrid images={firstRowImages} />
           <ImageGrid images={secondRowImages} />
