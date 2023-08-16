@@ -40,20 +40,21 @@ const LogoImage = styled.img`
   }
 `;
 
+const ContentText = styled.div`
+  font-size: 18px; 
+  line-height: 1.5; 
+`;
+
 export default function SpacehackContents() {
   return (
     <AppContainer>
       <SubHeadingContents title="SpaceHack@ESYA">
         <HistoryContainer>
-          <div className="content" style={{ marginRight: "4px" }}>
+          <ContentText style={{ marginRight: "4px" }}>
+            SpaceHack@ESYA 2023 is a fast-paced aerospace-focused startup pitch competition, that puts you into the suits of the heads of startups, competing to develop your product, bring it to market, and grow the company as if the sky is not the limit.
 
-          SpaceHack@ESYA 2023 is a fast-paced aerospace-focused startup pitch competition, that puts you into the suits of the heads of startups, competing to develop your product, bring it to market, and grow the company as if the sky is not the limit.
-
-Will your crew reach the stars, burn up in the atmosphere, and go out with a boom as all your skills are tested, including innovation, design, marketing, and pitching? Sign up at <a href="https://unstop.com/p/spacehack-esya23-indraprastha-institute-of-information-technology-iiit-delhi-728723">Unstop</a>, don your suits, check all safety systems, and prepare for lift-off on the 25th of August 2023 at IIIT Delhi!
-          
-            <br />
-            <br />
-          </div>
+            Will your crew reach the stars, burn up in the atmosphere, and go out with a boom as all your skills are tested, including innovation, design, marketing, and pitching? Sign up at <a href="https://unstop.com/p/spacehack-esya23-indraprastha-institute-of-information-technology-iiit-delhi-728723">Unstop</a>, don your suits, check all safety systems, and prepare for lift-off on the 25th of August 2023 at IIIT Delhi!
+          </ContentText>
           <LogoImage src={"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/placeholder.png"} alt="Vector Graphic" />
         </HistoryContainer>
       </SubHeadingContents>
