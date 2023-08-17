@@ -29,7 +29,7 @@ const PrincipalsContainer = styled.div`
   }
 
   .content {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 `;
 
