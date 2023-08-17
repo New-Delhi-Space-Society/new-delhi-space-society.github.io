@@ -23,14 +23,45 @@ As our organization continues to grow, we warmly welcome your support! Discover 
         <KBody>{introductionContent}</KBody>
       </SubHeadingContents>
       <SubHeadingContents title="Features & Awards">
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <img src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png" alt="Badge 1" width="150" />
-            <img src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png" alt="Badge 2" width="150" style={{ marginLeft: "20px" }} />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center", 
+            }}
+          >
+            <img
+              src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png"
+              alt="Badge 1"
+              width="150"
+            />
+            <img
+              src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png"
+              alt="Badge 2"
+              width="150"
+              style={{ marginLeft: "20px" }}
+            />
+            <a
+              href="https://www.hindustantimes.com/cities/delhi-news/asteroid-day-young-space-enthusiasts-shine-bright-in-delhi-s-skylight-101656603645351.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginLeft: "20px" }} 
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Hindustan_Times_logo.svg"
+                alt="Hindustan Times Logo"
+                width="300"
+              />
+            </a>
           </div>
-          <a href="https://www.hindustantimes.com/cities/delhi-news/asteroid-day-young-space-enthusiasts-shine-bright-in-delhi-s-skylight-101656603645351.html" target="_blank" rel="noopener noreferrer" style={{ marginTop: "20px" }}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Hindustan_Times_logo.svg" alt="Hindustan Times Logo" width="300" />
-          </a>
         </div>
       </SubHeadingContents>
     </AppContainer>
