@@ -36,7 +36,7 @@ const PrincipalsContainer = styled.div`
 const ImageGridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 26px;
 `;
 
 const ImageGridItem = styled.div`
@@ -46,7 +46,7 @@ const ImageGridItem = styled.div`
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* or object-fit: contain */
+    object-fit: cover; 
   }
 `;
 
