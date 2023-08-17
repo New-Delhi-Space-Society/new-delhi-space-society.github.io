@@ -44,11 +44,15 @@ const LogoImage = styled.img`
 `;
 
 const VectorGraphic = styled.img`
-  max-width: 35%; 
+  max-width: 35%;
   height: auto;
-  padding-right: 20px; 
+  padding-right: 20px;
 `;
 
+const Citation = styled.div`
+  font-size: 12px;
+  margin-top: 5px;
+`;
 
 export default function AboutContents() {
   return (
@@ -83,6 +87,7 @@ export default function AboutContents() {
             }
             alt="Vector Graphic"
           />
+          <Citation>©️ NASA's James Webb Space Telescope</Citation>
           <div className="content">
             Our motive is to spread awareness about the possibilities of space
             science and aerospace engineering. We believe that together, we can
