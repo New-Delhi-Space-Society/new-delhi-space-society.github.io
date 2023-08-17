@@ -17,7 +17,8 @@ const GridContainer = styled.div`
 
 const GridImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; 
 `;
 
 interface ImageGridProps {
@@ -34,4 +35,4 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
   );
 };
 
-export default ImageGrid; 
+export default ImageGrid;
