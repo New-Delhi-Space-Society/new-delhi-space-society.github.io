@@ -37,12 +37,15 @@ const ImageGridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
+  margin-top: 16px; 
+  .image-grid-container {
+    margin-top: 16px;
+  }
 `;
 
 const ImageGridItem = styled.div`
   flex: 1 0 0;
   max-width: 100%;
-
   img {
     width: 100%;
     height: 100%;
@@ -80,22 +83,26 @@ const SpacetechContents: React.FC = () => {
         </HistoryContainer>
       </SubHeadingContents>
       <SubHeadingContents title="Past Competitions (2018-2022)">
-        <PrincipalsContainer>
+      <PrincipalsContainer>
           <div className="content"></div>
-          <ImageGridContainer>
-            {firstRowImages.map((image, index) => (
-              <ImageGridItem key={index}>
-                <img src={image} alt={`Image ${index + 1}`} />
-              </ImageGridItem>
-            ))}
-          </ImageGridContainer>
-          <ImageGridContainer>
-            {secondRowImages.map((image, index) => (
-              <ImageGridItem key={index}>
-                <img src={image} alt={`Image ${index + 6}`} />
-              </ImageGridItem>
-            ))}
-          </ImageGridContainer>
+          <div className="image-grid-container"> 
+            <ImageGridContainer>
+              {firstRowImages.map((image, index) => (
+                <ImageGridItem key={index}>
+                  <img src={image} alt={`Image ${index + 1}`} />
+                </ImageGridItem>
+              ))}
+            </ImageGridContainer>
+          </div>
+          <div className="image-grid-container">
+            <ImageGridContainer>
+              {secondRowImages.map((image, index) => (
+                <ImageGridItem key={index}>
+                  <img src={image} alt={`Image ${index + 6}`} />
+                </ImageGridItem>
+              ))}
+            </ImageGridContainer>
+          </div>
         </PrincipalsContainer>
       </SubHeadingContents>
     </AppContainer>
