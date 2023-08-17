@@ -97,6 +97,12 @@ const SpacetechContents: React.FC = () => {
           <p>
           ‎‎‎‎
           </p>
+          <p>
+          ‎‎‎‎
+          </p>
+          <p>
+          ‎‎‎‎
+          </p>
           <div className="image-grid-container">
             <ImageGridContainer>
               {secondRowImages.map((image, index) => (
