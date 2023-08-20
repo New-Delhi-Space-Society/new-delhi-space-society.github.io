@@ -54,11 +54,12 @@ export default function Contents() {
               href="https://www.hindustantimes.com/cities/delhi-news/asteroid-day-young-space-enthusiasts-shine-bright-in-delhi-s-skylight-101656603645351.html"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ marginTop: "10px" }}
             >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Hindustan_Times_logo.svg"
                 alt="Hindustan Times Logo"
-                width="300"
+                width="150"
               />
             </a>
           </div>
