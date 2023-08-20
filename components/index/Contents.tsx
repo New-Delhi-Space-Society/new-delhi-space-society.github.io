@@ -4,6 +4,13 @@ import SubHeadingContents from "../SubHeadingContents";
 import { nssUrl } from "../../config";
 import { KBody } from "../Typography";
 
+interface Styles {
+  centeredContainer: React.CSSProperties;
+  badgeContainer: React.CSSProperties;
+  badgeImage: React.CSSProperties;
+  logoImage: React.CSSProperties;
+}
+
 export default function Contents() {
   const introductionContent = (
     <>
@@ -54,13 +61,13 @@ export default function Contents() {
   );
 }
 
-const styles = {
+const styles: Styles = {
   centeredContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: "column",
-  },
+    flexDirection: "column" as const, 
+  }
   badgeContainer: {
     display: "flex",
     alignItems: "center",
