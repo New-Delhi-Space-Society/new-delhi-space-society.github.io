@@ -1,13 +1,37 @@
 import { DefaultTheme } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
+interface IColors {
+  body: string;
+  text: string;
+  primaryMain: string;
+  primaryHover: string;
+  primaryDark: string;
+  bannercolor: string;
+  bannercolor2: string;
+  secondaryMain: string;
+  secondaryDark: string;
+  secondaryHover: string;
+}
+
+declare module "styled-components" {
+  export interface DefaultTheme {
+    colors: IColors;
+    font: string;
+  }
+}
+
 export const lightTheme: DefaultTheme = {
   colors: {
     body: "#ffffff",
     text: "#000000",
-    primaryMain: "#1C1436",
+    primaryMain: "#464D65",
     primaryHover: "#2C2055",
+    primaryDark: "#00675b",
+    bannercolor: "#081a26",
+    bannercolor2: "#5b4257",
     secondaryMain: "#6E55C0",
+    secondaryDark: "#ba000d",
     secondaryHover: "#6951B8",
   },
   font: "'Poppins', Helvetica, Trebuchet MS, Verdana",

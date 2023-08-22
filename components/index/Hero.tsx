@@ -6,11 +6,9 @@ import { KH1, KSubtitle } from "../Typography";
 import { nssUrl } from "../../config";
 
 const HeroContainer = styled.div`
-  background: linear-gradient(
-    to right,
-    ${lightTheme.colors.primaryMain},
-    ${lightTheme.colors.secondaryMain}
-  );
+  background-image: url('bannerpic.jpg');
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
 `;
@@ -23,14 +21,11 @@ const HeroContainerTwo = styled(AppContainer)`
 
   flex-direction: column-reverse;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  text-align: center;
+  align-items: flex-start; /* Align items to the left */
+  text-align: left; /* Align text to the left */
 
   @media ${device.lg} {
     flex-direction: row;
-    text-align: left;
   }
 
   * {
@@ -38,23 +33,40 @@ const HeroContainerTwo = styled(AppContainer)`
   }
 `;
 
+const ColoredText = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  display: inline-block;
+  text-align: left; /* Ensure the text inside this component is left-aligned */
+`;
+
+const JoinUsLink = styled.a`
+  display: flex;
+  justify-content: flex-start; /* Align the button to the left */
+  text-decoration: none;
+`;
+
 function Hero() {
   return (
     <HeroContainer>
       <HeroContainerTwo>
         <div className="text">
-          <KH1>New Delhi Space Society</KH1>
+          <ColoredText>
+            <KH1>New Delhi Space Society</KH1>
+          </ColoredText>
           <KSubtitle>
-            An Award Winning Chapter of the{" "}
-            <a
-              href={nssUrl}
-              target="_blank"
-              style={{ fontWeight: "bold", color: "#ffffff" }}
-            >
-              National Space Society
-            </a>
+            <ColoredText>
+              An Award Winning Chapter of the{" "}
+              <a
+                href={nssUrl}
+                target="_blank"
+                style={{ fontWeight: "bold", color: "#ffffff" }}
+              >
+                National Space Society
+              </a>
+            </ColoredText>
           </KSubtitle>
-          <a
+          <JoinUsLink
             href="https://forms.gle/xwbRGFx9fGyASD5B9"
             target="_blank"
             rel="noreferrer"
@@ -63,15 +75,8 @@ function Hero() {
             <Button buttonVariant="primary" buttonType="outlinedBG">
               Join Us
             </Button>
-          </a>
+          </JoinUsLink>
         </div>
-        <img
-          className="heroImage"
-          src={"Hero.png"}
-          style={{ maxWidth: "100%", height: "auto" }}
-          height={391}
-          width={484}
-        />
       </HeroContainerTwo>
     </HeroContainer>
   );

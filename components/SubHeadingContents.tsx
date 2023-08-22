@@ -1,19 +1,16 @@
-import { KContentHeadings } from "./Typography";
+import { KH2, KBody } from "./Typography";
 
-interface iSubHeadingContentsProps {
+interface SubHeadingContentsProps {
   title: string;
 }
 
-const SubHeadingContents: React.FunctionComponent<iSubHeadingContentsProps> = ({
-  title,
-  children,
-}) => {
+const SubHeadingContents: React.FC<SubHeadingContentsProps> = ({ title, children }) => {
   return (
     <div className="content">
-      <KContentHeadings style={{ margin: "32px 0 8px 0" }}>
+      <KH2 style={{ margin: "32px 0 8px 0", color: "#464D65" }}>
         {title}
-      </KContentHeadings>
-      {children}
+      </KH2>
+      <KBody>{children}</KBody>
     </div>
   );
 };

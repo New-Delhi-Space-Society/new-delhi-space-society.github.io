@@ -13,16 +13,6 @@ export const members = [
         image: "rudes.png",
       },
       {
-        name: "Priyanshi Ahuja",
-        role: "Treasurer",
-        image: "priyanshi.jpeg",
-      },
-      {
-        name: "Kavin Valli",
-        role: "Chapter Officer",
-        image: "kavin.jpeg",
-      },
-      {
         name: "Shiv Sethi",
         role: "Board Member",
         image: "shiv.jpeg",
@@ -40,12 +30,22 @@ export const members = [
     ],
   },
   {
-    type: "Volunteers",
+    type: "Chapter Members",
     members: [
       {
         name: "Shireen Rajora",
         role: "Member",
         image: "shireen.png",
+      },
+      {
+        name: "Priyanshi Ahuja",
+        role: "Member",
+        image: "priyanshi.jpeg",
+      },
+      {
+        name: "Kavin Valli",
+        role: "Chapter Officer",
+        image: "kavin.jpeg",
       },
       {
         name: "Aadhya Dhar",
@@ -60,6 +60,56 @@ export const members = [
       {
         name: "Shrey Madaan",
         role: "Member",
+        image: "dummy.png",
+      },
+    ],
+  },
+  {
+    type: "Interns",
+    members: [
+      {
+        name: "Nisarga Adhikary",
+        role: "Intern",
+        image: "nisarga.png",
+      },
+      {
+        name: "Jai Ansh Singh Bindra",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Adarsh Kumar",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Manvik Kumar",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Aditya Shankar",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Anav Shah",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Aryaman Chandra",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Madhaavan Gupta",
+        role: "Intern",
+        image: "dummy.png",
+      },
+      {
+        name: "Shreyansh Dash",
+        role: "Intern",
         image: "dummy.png",
       },
     ],

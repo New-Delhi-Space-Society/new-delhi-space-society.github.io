@@ -18,9 +18,22 @@ const MembersDiv = styled.div`
 
   display: grid;
   grid-template-columns: auto;
+  row-gap: 1rem;
+
+  @media ${device.sm} {
+    grid-template-columns: auto auto;
+  }
+
+  @media ${device.md} {
+    grid-template-columns: auto auto auto;
+  }
 
   @media ${device.lg} {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  @media ${device.xl} {
+    grid-template-columns: auto auto auto auto auto;
   }
 `;
 
