@@ -40,12 +40,12 @@ export default function Contents() {
       <SubHeadingContents title="Features & Awards">
         <FeaturedDiv>
           <img
-            src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png"
+            src="https://media.discordapp.net/attachments/1120484062553976943/1143495199461490780/hm2.png?width=530&height=662"
             alt="Badge 1"
             width="150"
           />
           <img
-            src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png"
+            src="https://media.discordapp.net/attachments/1120484062553976943/1143495199696359507/newchapter2.png?width=530&height=662"
             alt="Badge 2"
             width="150"
           />
