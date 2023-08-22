@@ -15,7 +15,7 @@ jobs:
       - name: Install and Build
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 17
       - run: npm install
       - run: npm run build # runs `next build`
       - run: npm run export # runs `next export`
