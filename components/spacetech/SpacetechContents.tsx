@@ -94,9 +94,9 @@ const SpacetechContents: React.FC = () => {
             </p>
           </div>
         </HistoryContainer>
-        <YoutubeVideo videoId="zIuD__0Hu9k" />
       </SubHeadingContents>
       <SubHeadingContents title="Past Competitions (2018-2022)">
+      <YoutubeVideo videoId="zIuD__0Hu9k" />
         <PrincipalsContainer>
           <div className="content"></div>
           <FirstImageGridContainer>
