@@ -104,6 +104,7 @@ export default function AboutContents() {
             breakthroughs that were once merely dreams.
           </div>
         </PrincipalsContainer>
+        <Citation> Badge icon used on homepage by visual language from the Noun Project </Citation>
       </SubHeadingContents>
     </AppContainer>
   );
