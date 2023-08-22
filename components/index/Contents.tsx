@@ -43,24 +43,24 @@ export default function Contents() {
             src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png"
             alt="Badge 1"
             width="150"
-            style={{ marginBottom: "10px" }}
           />
           <img
             src="https://cdn.dribbble.com/users/2570/screenshots/17518521/media/a15126d45bf6c62753d781dbb823e36b.png"
             alt="Badge 2"
             width="150"
-            style={{ marginBottom: "10px" }}
           />
           <a
             href="https://www.hindustantimes.com/cities/delhi-news/asteroid-day-young-space-enthusiasts-shine-bright-in-delhi-s-skylight-101656603645351.html"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ marginTop: "10px" }}
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Hindustan_Times_logo.svg"
               alt="Hindustan Times Logo"
-              width="150"
+              style={{
+                maxWidth: "300px",
+                width: "100%",
+              }}
             />
           </a>
         </FeaturedDiv>
