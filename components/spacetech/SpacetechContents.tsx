@@ -98,14 +98,14 @@ const SpacetechContents: React.FC = () => {
           <div className="content"></div>
           <FirstImageGridContainer>
             {firstRowImages.map((image, index) => (
-              <img key={index} src={require(`../../public/${image}`)} alt={`Image ${index + 1}`} />
+              <img key={index} src={image} alt={`Image ${index + 1}`} />
             ))}
           </FirstImageGridContainer>
           <p>‎‎‎‎</p>
           <p>‎‎‎‎</p>
           <SecondImageGridContainer>
             {secondRowImages.map((image, index) => (
-              <img key={index} src={require(`../../public/${image}`)} alt={`Image ${index + 6}`} />
+              <img key={index} src={image} alt={`Image ${index + 6}`} />
             ))}
           </SecondImageGridContainer>
         </PrincipalsContainer>
