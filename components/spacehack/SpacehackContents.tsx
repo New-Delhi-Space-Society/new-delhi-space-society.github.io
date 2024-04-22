@@ -59,7 +59,7 @@ export default function SpacehackContents() {
             <p>Sign up at <a href="https://unstop.com/p/spacehack-esya23-indraprastha-institute-of-information-technology-iiit-delhi-728723">Unstop</a>, don your suits, check all safety systems, and prepare for lift-off on the 25th of August 2023 at IIIT Delhi!
           </p>
           </ContentText>
-          <LogoImage src={"https://media.discordapp.net/attachments/1120484062553976943/1141337384252866640/SpaceHack1.png?width=662&height=662"} alt="Vector Graphic" />
+          <LogoImage src="spacehack.png" alt="Vector Graphic" />
         </HistoryContainer>
       </SubHeadingContents>
     </AppContainer>

@@ -81,12 +81,7 @@ export default function AboutContents() {
       </SubHeadingContents>
       <SubHeadingContents title="What principles do we follow?">
         <PrincipalsContainer>
-          <VectorGraphic
-            src={
-              "https://media.discordapp.net/attachments/1120484062553976943/1135181450380058675/JWST-Carina-Nebula-Crop-FI.png?width=1160&height=662"
-            }
-            alt="Vector Graphic"
-          />
+          <VectorGraphic src={"about-graphic.jpeg"} alt="Vector Graphic" />
           <Citation>©️ NASA's James Webb Space Telescope</Citation>
           <div className="content">
             Our motive is to spread awareness about the possibilities of space
@@ -104,7 +99,10 @@ export default function AboutContents() {
             breakthroughs that were once merely dreams.
           </div>
         </PrincipalsContainer>
-        <Citation> Badge icon used on homepage by visual language from the Noun Project </Citation>
+        <Citation>
+          {" "}
+          Badge icon used on homepage by visual language from the Noun Project{" "}
+        </Citation>
       </SubHeadingContents>
     </AppContainer>
   );
