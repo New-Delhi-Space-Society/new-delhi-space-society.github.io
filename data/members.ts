@@ -53,20 +53,16 @@ export const members = [
         role: "Member",
         image: "shireen.jpeg",
       },
-
       {
         name: "Priyanshi Ahuja",
         role: "Member",
         image: "priyanshi.jpeg",
       },
-      
-      
-      
-      {
-        name: "Shrey Madaan",
-        role: "Member",
-        image: "dummy.png",
-      },
+      // {
+      //   name: "Shrey Madaan",
+      //   role: "Member",
+      //   image: "dummy.png",
+      // },
     ],
   },
   {
@@ -77,51 +73,51 @@ export const members = [
         role: "Intern",
         image: "Khushal.jpg",
       },
-       {
-        name: "Nisarga Adhikary",
-        role: "Intern",
-        image: "nisarga.png",
-      },
-      {
-        name: "Jai Ansh Singh Bindra",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Adarsh Kumar",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Manvik Kumar",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Aditya Shankar",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Anav Shah",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Aryaman Chandra",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Madhaavan Gupta",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Shreyansh Dash",
-        role: "Intern",
-        image: "dummy.png",
-      },
+      //  {
+      //   name: "Nisarga Adhikary",
+      //   role: "Intern",
+      //   image: "nisarga.png",
+      // },
+      // {
+      //   name: "Jai Ansh Singh Bindra",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Adarsh Kumar",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Manvik Kumar",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Aditya Shankar",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Anav Shah",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Aryaman Chandra",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Madhaavan Gupta",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Shreyansh Dash",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
       {
         name: "Aryan Choudhary",
         role: "Intern",
