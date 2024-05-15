@@ -5,12 +5,12 @@ export const members = [
       {
         name: "Ashvin Verma",
         role: "President",
-        image: "ashvin.jpg",
+        image: "ashvin.png",
       },
       {
         name: "Rudraneel Sinha",
         role: "Vice-President",
-        image: "rudes.png",
+        image: "Rudraneel.jpg",
       },
       {
         name: "Shiv Sethi",
@@ -32,86 +32,103 @@ export const members = [
   {
     type: "Chapter Members",
     members: [
-      {
-        name: "Shireen Rajora",
-        role: "Member",
-        image: "shireen.png",
-      },
-      {
-        name: "Priyanshi Ahuja",
-        role: "Member",
-        image: "priyanshi.jpeg",
-      },
-      {
-        name: "Kavin Valli",
-        role: "Chapter Officer",
-        image: "kavin.jpeg",
-      },
+    
       {
         name: "Aadhya Dhar",
         role: "Member",
         image: "Aadhya.PNG",
       },
       {
+        name: "Kavin Valli",
+        role: "Chapter Officer",
+        image: "Kavin.jpg",
+      },
+      {
         name: "Amartya Bagchi",
         role: "Member",
         image: "amartya.jpg",
       },
-      {
-        name: "Shrey Madaan",
+        {
+        name: "Shireen Rajora",
         role: "Member",
-        image: "dummy.png",
+        image: "shireen.jpeg",
       },
+      {
+        name: "Priyanshi Ahuja",
+        role: "Member",
+        image: "priyanshi.jpeg",
+      },
+      // {
+      //   name: "Shrey Madaan",
+      //   role: "Member",
+      //   image: "dummy.png",
+      // },
     ],
   },
   {
     type: "Interns",
     members: [
       {
-        name: "Nisarga Adhikary",
+        name: "Khushal Davesar",
         role: "Intern",
-        image: "nisarga.png",
+        image: "Khushal.jpg",
       },
+      //  {
+      //   name: "Nisarga Adhikary",
+      //   role: "Intern",
+      //   image: "nisarga.png",
+      // },
+      // {
+      //   name: "Jai Ansh Singh Bindra",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Adarsh Kumar",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Manvik Kumar",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Aditya Shankar",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Anav Shah",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Aryaman Chandra",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Madhaavan Gupta",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
+      // {
+      //   name: "Shreyansh Dash",
+      //   role: "Intern",
+      //   image: "dummy.png",
+      // },
       {
-        name: "Jai Ansh Singh Bindra",
+        name: "Aryan Choudhary",
         role: "Intern",
         image: "dummy.png",
       },
       {
-        name: "Adarsh Kumar",
+        name: "Tanmay Jain",
         role: "Intern",
         image: "dummy.png",
       },
-      {
-        name: "Manvik Kumar",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Aditya Shankar",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Anav Shah",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Aryaman Chandra",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Madhaavan Gupta",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Shreyansh Dash",
-        role: "Intern",
-        image: "dummy.png",
-      },
+
     ],
   },
 ];
