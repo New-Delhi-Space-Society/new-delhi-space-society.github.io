@@ -32,11 +32,10 @@ export const members = [
   {
     type: "Chapter Members",
     members: [
-    
       {
         name: "Aadhya Dhar",
         role: "Member",
-        image: "Aadhya.PNG",
+        image: "aadhya.jpeg",
       },
       {
         name: "Kavin Valli",
@@ -48,7 +47,7 @@ export const members = [
         role: "Member",
         image: "amartya.jpg",
       },
-        {
+      {
         name: "Shireen Rajora",
         role: "Member",
         image: "shireen.jpeg",
@@ -128,7 +127,6 @@ export const members = [
         role: "Intern",
         image: "dummy.png",
       },
-
     ],
   },
 ];
