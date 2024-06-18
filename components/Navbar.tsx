@@ -22,12 +22,16 @@ const navLinks: NavbarLink[] = [
     text: "About",
   },
   {
+    to: "/resources",
+    text: "Resources",
+  },
+  {
     to: "/spacetech",
     text: "SpaceTech",
   },
   {
     to: "/spacehack",
-    text:"SpaceHack",
+    text: "SpaceHack",
   },
   {
     to: "/members",
@@ -40,7 +44,7 @@ const navLinks: NavbarLink[] = [
   {
     to: "https://forms.gle/xwbRGFx9fGyASD5B9",
     text: "Join Us",
-  }
+  },
 ];
 
 const NavbarContainer = styled(AppContainer)`
@@ -66,7 +70,7 @@ const NavLink = styled(KNavbarText)`
   margin: 18px;
   cursor: pointer;
   display: none;
-  color: var(--primary-main, #1C1436);
+  color: var(--primary-main, #1c1436);
   font-family: "Roboto Flex", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -112,7 +116,11 @@ export default function Navbar() {
           {navLinks.map((item, index) => (
             <Link href={item.to} key={index}>
               {item.to.startsWith("http") ? (
-                <a target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
                   <NavLink>{item.text}</NavLink>
                 </a>
               ) : (
@@ -138,7 +146,11 @@ export default function Navbar() {
             <MobileNavbarLinkDiv key={index}>
               <Link href={item.to}>
                 {item.to.startsWith("http") ? (
-                  <a target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none" }}
+                  >
                     <KNavbarText>{item.text}</KNavbarText>
                   </a>
                 ) : (
