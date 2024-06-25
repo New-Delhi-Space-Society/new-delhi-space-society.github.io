@@ -24,11 +24,9 @@ export default function ResourcesContents() {
       Text: string;
     }[]
   >([]);
-  const [loading, setLoading] = React.useState(true);
-
   useEffect(() => {
-    setLoading(false);
-
+    localStorage.getItem("CACHED_RESOURCES") &&
+      setData(JSON.parse(localStorage.getItem("CACHED_RESOURCES")!));
     Papa.parse(process.env.NEXT_PUBLIC_RESOURCES_SHEET, {
       download: true,
       header: true,
@@ -39,7 +37,15 @@ export default function ResourcesContents() {
             Text: string;
           }[],
         );
-        setLoading(false);
+        localStorage.setItem(
+          "CACHED_RESOURCES",
+          JSON.stringify(
+            results.data as {
+              Heading: string;
+              Text: string;
+            }[],
+          ),
+        );
       },
     });
   }, []);
@@ -47,22 +53,16 @@ export default function ResourcesContents() {
   return (
     <AppContainer>
       <SubHeadingContents title="Resources">
-        {loading ? (
-          <p>Loading...</p>
-        ) : (
-          <ResourcesContainer>
-            {data.map((item, index) => (
-              <div className="content" key={index}>
-                <KH3 style={{ margin: "32px 0 8px 0", color: "#464D65" }}>
-                  {item.Heading}
-                </KH3>
-                <Markdown options={{ wrapper: "article" }}>
-                  {item.Text}
-                </Markdown>
-              </div>
-            ))}
-          </ResourcesContainer>
-        )}
+        <ResourcesContainer>
+          {data.map((item, index) => (
+            <div className="content" key={index}>
+              <KH3 style={{ margin: "32px 0 8px 0", color: "#464D65" }}>
+                {item.Heading}
+              </KH3>
+              <Markdown options={{ wrapper: "article" }}>{item.Text}</Markdown>
+            </div>
+          ))}
+        </ResourcesContainer>
       </SubHeadingContents>
     </AppContainer>
   );
