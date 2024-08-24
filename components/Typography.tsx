@@ -25,6 +25,7 @@ export const KH3 = styled.h3`
   font-weight: bold;
   letter-spacing: -2%;
   font-family: "Poppins", sans-serif;
+  line-height: 100%;
 `;
 
 export const KSubtitle = styled.p`

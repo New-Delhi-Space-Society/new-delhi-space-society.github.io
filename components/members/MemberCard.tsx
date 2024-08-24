@@ -33,7 +33,7 @@ const MemberImage = styled.img`
 `;
 
 const MemberName = styled(KH3)`
-  margin-top: 16px; /* add margin-top */
+  text-align: center;
 `;
 
 const MemberCard: React.FunctionComponent<iProps> = ({ member }) => {
