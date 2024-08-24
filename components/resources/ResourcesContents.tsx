@@ -5,6 +5,9 @@ import SubHeadingContents from "../SubHeadingContents";
 import Papa from "papaparse";
 import { KH3 } from "../Typography";
 import Markdown from "markdown-to-jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import LoadingSkeleton from "../LoadingSkeleton";
 
 const ResourcesContainer = styled.div`
   .content {
@@ -24,9 +27,13 @@ export default function ResourcesContents() {
       Text: string;
     }[]
   >([]);
+  const [loading, setLoading] = React.useState(true);
+
   useEffect(() => {
-    localStorage.getItem("CACHED_RESOURCES") &&
+    if (localStorage.getItem("CACHED_RESOURCES")) {
       setData(JSON.parse(localStorage.getItem("CACHED_RESOURCES")!));
+      setLoading(false);
+    }
     Papa.parse(process.env.NEXT_PUBLIC_RESOURCES_SHEET, {
       download: true,
       header: true,
@@ -46,6 +53,7 @@ export default function ResourcesContents() {
             }[],
           ),
         );
+        setLoading(false);
       },
     });
   }, []);
@@ -53,16 +61,22 @@ export default function ResourcesContents() {
   return (
     <AppContainer>
       <SubHeadingContents title="Resources">
-        <ResourcesContainer>
-          {data.map((item, index) => (
-            <div className="content" key={index}>
-              <KH3 style={{ margin: "32px 0 8px 0", color: "#464D65" }}>
-                {item.Heading}
-              </KH3>
-              <Markdown options={{ wrapper: "article" }}>{item.Text}</Markdown>
-            </div>
-          ))}
-        </ResourcesContainer>
+        {!loading ? (
+          <ResourcesContainer>
+            {data.map((item, index) => (
+              <div className="content" key={index}>
+                <KH3 style={{ margin: "32px 0 8px 0", color: "#464D65" }}>
+                  {item.Heading}
+                </KH3>
+                <Markdown options={{ wrapper: "article" }}>
+                  {item.Text}
+                </Markdown>
+              </div>
+            ))}
+          </ResourcesContainer>
+        ) : (
+          <LoadingSkeleton />
+        )}
       </SubHeadingContents>
     </AppContainer>
   );
