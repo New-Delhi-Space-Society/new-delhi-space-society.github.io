@@ -36,7 +36,7 @@ export const members = [
       {
         name: "Aadhya Dhar",
         role: "Member",
-        image: "Aadhya.PNG",
+        image: "aadhya.jpeg",
       },
       {
         name: "Kavin Valli",
