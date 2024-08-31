@@ -62,6 +62,16 @@ export const members = [
         role: "Member",
         image: "dummy.png",
       },
+      {
+        name: "Aryaman Chandra",
+        role: "Member",
+        image: "dummy.png",
+      },
+      {
+        name: "Pradyun Rudra Patra",
+        role: "Member",
+        image: "dummy.png",
+      },
     ],
   },
   {
@@ -124,11 +134,6 @@ export const members = [
       },
       {
         name: "Aikagra Gupta",
-        role: "Intern",
-        image: "dummy.png",
-      },
-      {
-        name: "Pradyun Rudra Patra",
         role: "Intern",
         image: "dummy.png",
       },
