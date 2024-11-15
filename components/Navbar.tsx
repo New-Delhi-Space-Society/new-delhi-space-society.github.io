@@ -26,6 +26,10 @@ const navLinks: NavbarLink[] = [
     text: "Resources",
   },
   {
+    to: '/scopefest',
+    text: "Scope Film Festival"
+  },
+  {
     to: "/spacetech",
     text: "SpaceTech",
   },
