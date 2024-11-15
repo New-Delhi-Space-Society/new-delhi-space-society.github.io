@@ -8,14 +8,14 @@ export const members = [
         image: "ashvin.png",
       },
       {
-        name: "Rudraneel Sinha",
+        name: "Shiv Sethi",
         role: "Vice-President",
-        image: "Rudraneel.jpg",
+        image: "shiv.jpeg",
       },
       {
-        name: "Shiv Sethi",
-        role: "Board Member",
-        image: "shiv.jpeg",
+        name: "Rudraneel Sinha",
+        role: "Treasurer",
+        image: "Rudraneel.jpg",
       },
       {
         name: "Hersh Singh",
