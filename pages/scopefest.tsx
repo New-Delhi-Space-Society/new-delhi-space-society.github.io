@@ -1,4 +1,4 @@
-import ScopeFestContents from "../components/scopefest/ScopeFestContents";
+import ScopeFestContents from "../components/scopefest/ScopefestContents";
 
 export default function About() {
   return (
